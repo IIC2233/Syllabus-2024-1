@@ -10,7 +10,7 @@
 | Daniela Concha          | 2       | @lily416    | daconcha@uc.cl     |
 | Francisca Ibarra        | 3       | @gatochico  | faibarra1@uc.cl    |
 | Dante Pinto             | 4       | @Drpinto1   | drpinto@uc.cl      |
-| Francisca Cattan (Paca) | 5       | @pacalein   | fpcattan@uc.cl     |
+| Francisca Cattan (Paqui) | 5       | @pacalein   | fpcattan@uc.cl     |
 
 ## Semestres Anteriores
 
