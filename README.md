@@ -1,4 +1,4 @@
-# IIC2233 - Programación Avanzad
+# IIC2233 - Programación Avanzada
 
 ## Cuerpo Docente
 
