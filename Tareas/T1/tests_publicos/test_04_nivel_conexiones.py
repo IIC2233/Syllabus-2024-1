@@ -76,13 +76,18 @@ class TestNivelConexiones(unittest.TestCase):
         estaciones = ["A", "B", "C", "D"]
 
         red = RedMetro(conexiones, estaciones)
-        with patch("dcciudad.alcanzable", side_effect=alcanzable) as mock:
-            red.nivel_conexiones("A", "B")
-            red.nivel_conexiones("A", "C")
-            red.nivel_conexiones("A", "D")
-            red.nivel_conexiones("D", "B")
+        
+        with patch("red.alcanzable", side_effect=alcanzable) as mock:
+            with patch("dcciudad.alcanzable", side_effect=alcanzable) as mock_2:
+                red.nivel_conexiones("A", "B")
+                red.nivel_conexiones("A", "C")
+                red.nivel_conexiones("A", "D")
+                red.nivel_conexiones("D", "B")
 
-            mock.assert_called()
+                try:
+                    mock.assert_called()
+                except AssertionError:
+                    mock_2.assert_called()
 
 
 if __name__ == "__main__":

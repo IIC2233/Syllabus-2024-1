@@ -1,0 +1,8 @@
+6
+Moneda
+Camino Agricola
+Cerrillos
+Mirador
+Quinta Normal
+San Joaquin
+0,1,1,0,0,0,0,0,1,0,1,0,0,1,0,1,0,0,0,1,1,0,1,0,0,1,1,0,0,1,0,0,1,0,1,0

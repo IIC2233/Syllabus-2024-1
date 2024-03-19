@@ -97,15 +97,18 @@ class TestCicloMasCorto(unittest.TestCase):
 
         red = RedMetro(conexiones, estaciones)
         with patch("dcciudad.elevar_matriz", side_effect=elevar_matriz) as mock:
-            red.ciclo_mas_corto("A")
-            red.ciclo_mas_corto("B")
-            red.ciclo_mas_corto("C")
-            red.ciclo_mas_corto("D")
-            red.ciclo_mas_corto("E")
-            red.ciclo_mas_corto("F")
-            red.ciclo_mas_corto("G")
-
-            mock.assert_called()
+            with patch("red.elevar_matriz", side_effect=elevar_matriz) as mock_2:
+                red.ciclo_mas_corto("A")
+                red.ciclo_mas_corto("B")
+                red.ciclo_mas_corto("C")
+                red.ciclo_mas_corto("D")
+                red.ciclo_mas_corto("E")
+                red.ciclo_mas_corto("F")
+                red.ciclo_mas_corto("G")
+            try:
+                mock.assert_called()
+            except AssertionError:
+                mock_2.assert_called()
 
     def test_4(self):
         """
