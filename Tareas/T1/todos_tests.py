@@ -1,0 +1,15 @@
+import unittest
+from tests_publicos.test_00_informacion_red import TestInformacionRed
+from tests_publicos.test_01_agregar_tunel import TestAgregarTunel
+from tests_publicos.test_02_tapar_tunel import TestTaparTunel
+from tests_publicos.test_03_invertir_tunel import TestInvertirTunel
+from tests_publicos.test_04_nivel_conexiones import TestNivelConexiones
+from tests_publicos.test_05_rutas_posibles import TestRutasPosibles
+from tests_publicos.test_06_ciclo_mas_corto import TestCicloMasCorto
+from tests_publicos.test_07_estaciones_intermedias import TestEstacionesIntermedias
+from tests_publicos.test_08_estaciones_intermedias_avanzado import TestEstacionesIntermediasAvanzado
+from tests_publicos.test_09_cambiar_planos import TestCambiarPlanos
+from tests_publicos.test_10_asegurar_ruta import TestAsegurarRuta
+
+if __name__ == "__main__":
+	unittest.main(verbosity=2)
