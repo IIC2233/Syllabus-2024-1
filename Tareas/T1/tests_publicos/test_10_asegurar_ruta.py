@@ -26,9 +26,10 @@ class TestAsegurarRuta(unittest.TestCase):
         resultados_esperados = [[]]
 
         self.assertIsInstance(resultado_estudiante, list)
+        conexiones_originales = [[0, 1, 1, 0], [0, 0, 1, 1], [0, 1, 0, 1], [0, 0, 0, 0]]
         self.assertListEqual(
             red.red,
-            conexiones,
+            conexiones_originales,
             "Se ha modificado la red original; no se debe modificar la red original",
         )
         self.assertIn(
@@ -56,9 +57,17 @@ class TestAsegurarRuta(unittest.TestCase):
         resultados_esperados = [[]]
 
         self.assertIsInstance(resultado_estudiante, list)
+        conexiones_originales= [
+            [0, 1, 0, 0, 0, 0],
+            [0, 0, 1, 0, 0, 0],
+            [0, 0, 0, 1, 0, 0],
+            [0, 0, 0, 0, 1, 0],
+            [0, 0, 0, 0, 0, 1],
+            [0, 0, 0, 0, 0, 0],
+        ]
         self.assertListEqual(
             red.red,
-            conexiones,
+            conexiones_originales,
             "Se ha modificado la red original; no se debe modificar la red original",
         )
         self.assertIn(
@@ -96,9 +105,17 @@ class TestAsegurarRuta(unittest.TestCase):
         ]
 
         self.assertIsInstance(resultado_estudiante, list)
+        conexiones_originales = [
+            [0, 1, 0, 0, 0, 0],
+            [0, 0, 1, 0, 0, 0],
+            [0, 0, 0, 1, 0, 0],
+            [0, 0, 0, 0, 1, 0],
+            [0, 0, 0, 0, 0, 1],
+            [0, 0, 0, 0, 0, 0],
+        ]
         self.assertListEqual(
             red.red,
-            conexiones,
+            conexiones_originales,
             "Se ha modificado la red original; no se debe modificar la red original",
         )
         self.assertIn(
@@ -119,11 +136,11 @@ class TestAsegurarRuta(unittest.TestCase):
         resultados_esperados = [
             [[0, 1, 0], [0, 0, 1], [0, 0, 0]],
         ]
-
         self.assertIsInstance(resultado_estudiante, list)
+        conexiones_originales = [[0, 1, 1], [0, 0, 1], [0, 0, 0]]
         self.assertListEqual(
             red.red,
-            conexiones,
+            conexiones_originales,
             "Se ha modificado la red original; no se debe modificar la red original",
         )
         self.assertIn(
@@ -155,9 +172,14 @@ class TestAsegurarRuta(unittest.TestCase):
         ]
 
         self.assertIsInstance(resultado_estudiante, list)
+        conexiones_originales = [
+            [1, 1, 0],
+            [0, 0, 1],
+            [0, 0, 0],
+        ]
         self.assertListEqual(
             red.red,
-            conexiones,
+            conexiones_originales,
             "Se ha modificado la red original; no se debe modificar la red original",
         )
         self.assertIn(
@@ -191,11 +213,17 @@ class TestAsegurarRuta(unittest.TestCase):
                 [0, 0, 0, 0, 0],
             ]
         ]
-
+        conexiones_originales = [
+            [0, 1, 1, 1, 1],
+            [0, 0, 1, 0, 0],
+            [0, 0, 0, 1, 0],
+            [0, 0, 0, 0, 1],
+            [0, 0, 0, 0, 0],
+        ]
         self.assertIsInstance(resultado_estudiante, list)
         self.assertListEqual(
             red.red,
-            conexiones,
+            conexiones_originales,
             "Se ha modificado la red original; no se debe modificar la red original",
         )
         self.assertIn(
@@ -225,9 +253,13 @@ class TestAsegurarRuta(unittest.TestCase):
         ]
 
         self.assertIsInstance(resultado_estudiante, list)
+        conexiones_originales = [
+            [0, 1],
+            [1, 1],
+        ]
         self.assertListEqual(
             red.red,
-            conexiones,
+            conexiones_originales,
             "Se ha modificado la red original; no se debe modificar la red original",
         )
         self.assertIn(
@@ -254,11 +286,14 @@ class TestAsegurarRuta(unittest.TestCase):
         resultados_esperados = [
             [],
         ]
-
+        conexiones_originales = [
+            [0, 1],
+            [0, 1],
+        ]
         self.assertIsInstance(resultado_estudiante, list)
         self.assertListEqual(
             red.red,
-            conexiones,
+            conexiones_originales,
             "Se ha modificado la red original; no se debe modificar la red original",
         )
         self.assertIn(
@@ -286,11 +321,15 @@ class TestAsegurarRuta(unittest.TestCase):
         resultados_esperados = [
             [],
         ]
-
+        conexiones_originales = [
+            [0, 1, 0],
+            [0, 0, 1],
+            [1, 0, 0],
+        ]
         self.assertIsInstance(resultado_estudiante, list)
         self.assertListEqual(
             red.red,
-            conexiones,
+            conexiones_originales,
             "Se ha modificado la red original; no se debe modificar la red original",
         )
         self.assertIn(
@@ -336,9 +375,17 @@ class TestAsegurarRuta(unittest.TestCase):
         ]
 
         self.assertIsInstance(resultado_estudiante, list)
+        conexiones_originales = [
+            [0, 1, 0, 0, 0, 1],
+            [0, 0, 1, 0, 0, 1],
+            [0, 1, 0, 1, 0, 0],
+            [0, 0, 0, 0, 1, 1],
+            [0, 0, 0, 0, 0, 1],
+            [0, 0, 0, 0, 0, 0],
+        ]
         self.assertListEqual(
             red.red,
-            conexiones,
+            conexiones_originales,
             "Se ha modificado la red original; no se debe modificar la red original",
         )
         self.assertIn(
@@ -360,9 +407,10 @@ class TestAsegurarRuta(unittest.TestCase):
         resultados_esperados = [[[0, 1, 0], [0, 0, 1], [1, 0, 0]]]
 
         self.assertIsInstance(resultado_estudiante, list)
+        conexiones_originales = [[0, 1, 0], [0, 0, 1], [1, 0, 0]]
         self.assertListEqual(
             red.red,
-            conexiones,
+            conexiones_originales,
             "Se ha modificado la red original; no se debe modificar la red original",
         )
         self.assertIn(

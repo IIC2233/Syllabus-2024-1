@@ -12,3 +12,5 @@
 > 20 de marzo
  
 1. Se actualizó los tests `test_04_nivel_conexiones.py` y `test_06_ciclo_mas_corto.py` porque la solución subida el 19 de marzo no estaba correta. Esta situación se conversa [en esta issue](https://github.com/IIC2233/Syllabus/issues/58).
+
+2. Se actualizó  `test_10_asegurar_ruta.py` para ser consistente con el enunciado. En particular, en la explicación de `asegurar_ruta`, el enunciado dice _"Este método se debe encargar de **copiar la red de metro**"_, pero los _tests_ no estaban validando correctamente esta afirmación. Esta situación se notificó [en esta issue](https://github.com/IIC2233/Syllabus/issues/65).
