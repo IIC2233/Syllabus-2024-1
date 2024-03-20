@@ -77,17 +77,24 @@ class TestNivelConexiones(unittest.TestCase):
 
         red = RedMetro(conexiones, estaciones)
         
-        with patch("red.alcanzable", side_effect=alcanzable) as mock:
-            with patch("dcciudad.alcanzable", side_effect=alcanzable) as mock_2:
-                red.nivel_conexiones("A", "B")
-                red.nivel_conexiones("A", "C")
-                red.nivel_conexiones("A", "D")
-                red.nivel_conexiones("D", "B")
+        # Primero verificar si hace "import dcciudad y dcciudad.alcanzable"
+        with patch("dcciudad.alcanzable", side_effect=alcanzable) as mock_2:
+            red.nivel_conexiones("A", "B")
+            red.nivel_conexiones("A", "C")
+            red.nivel_conexiones("A", "D")
+            red.nivel_conexiones("D", "B")
 
-                try:
+            try:
+                mock_2.assert_called()
+            except AssertionError:
+                # Si no funciona
+                # Probar si hace "from dcciudad import alcanzable"
+                with patch("red.alcanzable", side_effect=alcanzable) as mock:
+                    red.nivel_conexiones("A", "B")
+                    red.nivel_conexiones("A", "C")
+                    red.nivel_conexiones("A", "D")
+                    red.nivel_conexiones("D", "B")
                     mock.assert_called()
-                except AssertionError:
-                    mock_2.assert_called()
 
 
 if __name__ == "__main__":
