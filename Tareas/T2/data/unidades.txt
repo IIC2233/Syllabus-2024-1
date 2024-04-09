@@ -1,0 +1,6 @@
+Natalia,GUE,70,15,7,5,7
+Patricio,GUE,90,16,7,7,7
+Amanda,MAG,55,9,10,6,5
+Teresita,MAG,65,11,10,6,6
+Maria,CAB,75,13,6,8,6
+GYMPro,CAB,60,10,5,8,5

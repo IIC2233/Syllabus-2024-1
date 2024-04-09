@@ -1,0 +1,3 @@
+Esteban,CAB,60,10,5,8,5;Diego,MAG,55,9,10,6,5;Benjamin,GUE,70,15,7,5,7
+Cristobal,GUE,70,15,7,5,7;Julio,CAB,60,10,5,8,5;Clemente,MAG,55,9,10,6,5
+Julian,MAG,55,9,10,6,5;Carlos,CAB,60,10,5,8,5;Diego,GUE,70,15,7,5,7
