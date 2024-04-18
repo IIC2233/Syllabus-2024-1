@@ -1,0 +1,5 @@
+3
+Camino Agricola
+Los Contadores
+Baquedano
+1,1,0,0,1,0,1,0,1
