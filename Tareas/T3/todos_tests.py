@@ -1,0 +1,57 @@
+import unittest
+
+from tests_publicos.test_base_cargar_datos import TestCargarDatos
+
+from tests_publicos.test_00_animales_segun_edad import TestAnimalesSegunEdad
+
+from tests_publicos.test_01_animales_que_votaron_por import TestAnimalesQueVotaronPor
+
+from tests_publicos.test_02_cantidad_votos_candidato import TestCantidadVotosCandidato
+
+from tests_publicos.test_03_ciudades_distritos import TestCiudadesDistritos
+
+from tests_publicos.test_04_especies_postulantes import TestEspeciesPostulantes
+
+from tests_publicos.test_05_pares_candidatos import TestParesCandidatos
+
+from tests_publicos.test_06_votos_alcalde_en_local import TestVotosAlcaldeEnLocal
+
+from tests_publicos.test_07_locales_mas_votos_comuna import TestLocalesMasVotosComuna
+
+from tests_publicos.test_08_votos_candidato_mas_votado import TestVotosCandidatoMasVotado
+
+from tests_publicos.test_09_animales_segun_edad_humana import TestAnimalesSegunEdadHumana
+
+from tests_publicos.test_10_animal_mas_viejo_edad_humana import TestAnimalMasViejoEdadHumana
+
+from tests_publicos.test_11_votos_por_especie import TestVotosPorEspecie
+
+from tests_publicos.test_12_hallar_region import TestHallarRegion
+
+from tests_publicos.test_13_max_locales_distrito import TestMaxLocalesDistrito
+
+from tests_publicos.test_14_votaron_por_si_mismos import TestVotaronPorSiMismos
+
+from tests_publicos.test_15_ganadores_por_distrito import TestGanadoresPorDistrito
+
+from tests_publicos.test_16_mismo_mes_candidato import TestMismoMesCandidato
+
+from tests_publicos.test_17_edad_promedio_humana_voto_comuna import TestEdadPromedioHumanaVotoComuna
+
+from tests_publicos.test_18_votos_interespecie import TestVotosInterespecie
+
+from tests_publicos.test_19_porcentaje_apoyo_especie import TestPorcentajeApoyoEspecie
+
+from tests_publicos.test_20_votos_validos import TestVotosValidos
+
+from tests_publicos.test_21_cantidad_votos_especie_entre_edades import TestCantidadVotosEspecieEntreEdades
+
+from tests_publicos.test_22_distrito_mas_votos_especie_bisiesto import TestDistritoMasVotosEspecieBisiesto
+
+from tests_publicos.test_23_votos_validos_local import TestVotosValidosLocal
+
+from tests_publicos.test_24_votantes_validos_por_distrito import TestVotantesValidosPorDistrito
+
+
+if __name__ == "__main__":
+	unittest.main(verbosity=2)
