@@ -1,0 +1,23 @@
+POSICION_Y = 300
+TIEMPO_CAIDA_METEORO = 0.1
+DISTANCIA_MINIMA = 5
+DISTANCIA_MAXIMA = 20
+DIFICULTAD = {
+    "Fácil": 2000,
+    "Normal": 1500,
+    "Imposible": 500
+}
+POBLACION_MAXIMA = 400
+AFECTADOS = 20
+
+FONDO_PATH = './files/fondo.jpg'
+METEORO_PATH = './files/meteorite.png'
+MIRA_PATH = './files/shooting-target.png'
+
+ANCHO_JUEGO = 800
+ALTURA_JUEGO = 500
+
+ANCHO_METEORO = 30
+ALTURA_METEORO = 200
+
+DISTANCIA_IMPACTO = 10
