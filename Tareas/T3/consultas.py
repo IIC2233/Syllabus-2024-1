@@ -126,7 +126,7 @@ def edad_promedio_humana_voto_comuna(generador_animales: Generator,
 
 def votos_interespecie(generador_animales: Generator,
     generador_votos: Generator, generador_candidatos: Generator,
-    misma_especie: bool) -> Generator:
+    misma_especie: bool = False,) -> Generator:
     # COMPLETAR
     pass
 

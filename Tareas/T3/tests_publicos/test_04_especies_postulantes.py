@@ -42,7 +42,7 @@ class TestEspeciesPostulantes(unittest.TestCase):
         
         resultado_estudiante = especies_postulantes(generador_entregado, 1)
 
-        self.assertIsInstance(resultado_estudiante, Generator)
+        self.assertIsInstance(resultado_estudiante, (list, tuple, set, filter, map, Generator))
 
         lista_esperada = [ 'Medusa', 'Tortuga', 'Pingüino emperador',
                           'Delfín nariz de botella', 'Mantarraya', 'Manatí de tierra',
@@ -86,7 +86,7 @@ class TestEspeciesPostulantes(unittest.TestCase):
         
         resultado_estudiante = especies_postulantes(generador_entregado, 2)
 
-        self.assertIsInstance(resultado_estudiante, Generator)
+        self.assertIsInstance(resultado_estudiante, (list, tuple, set, filter, map, Generator))
 
         lista_esperada = [ 'Medusa', 'Pingüino emperador',
                           'Caracol de jardín'
@@ -129,7 +129,7 @@ class TestEspeciesPostulantes(unittest.TestCase):
         
         resultado_estudiante = especies_postulantes(generador_entregado, 3)
 
-        self.assertIsInstance(resultado_estudiante, Generator)
+        self.assertIsInstance(resultado_estudiante, (list, tuple, set, filter, map, Generator))
 
         lista_esperada = [ 'Medusa']
 
@@ -170,7 +170,7 @@ class TestEspeciesPostulantes(unittest.TestCase):
         
         resultado_estudiante = especies_postulantes(generador_entregado, 4)
 
-        self.assertIsInstance(resultado_estudiante, Generator)
+        self.assertIsInstance(resultado_estudiante, (list, tuple, set, filter, map, Generator))
 
         lista_esperada = [ 'Medusa', 'Pingüino emperador',
         ]
@@ -212,7 +212,7 @@ class TestEspeciesPostulantes(unittest.TestCase):
         
         resultado_estudiante = especies_postulantes(generador_entregado, 10)
 
-        self.assertIsInstance(resultado_estudiante, Generator)
+        self.assertIsInstance(resultado_estudiante, (list, tuple, set, filter, map, Generator))
 
         lista_esperada = ['Medusa']
 

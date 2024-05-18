@@ -137,7 +137,7 @@ class TestMaxLocalesDistrito(unittest.TestCase):
         lista_distritos = [
             Distritos(id_distrito=1, nombre='Distrito Sacapuntas',          id_comuna=0,   provincia='Providencia',             region= 'RM'),
             Distritos(id_distrito=1, nombre='Distrito Sacapuntas',          id_comuna=10,   provincia='Providencia',             region= 'RM'),
-            Distritos(id_distrito=1, nombre='Distrito 2',                   id_comuna=9,   provincia='Macul',                   region= 'RM'),
+            Distritos(id_distrito=2, nombre='Distrito 2',                   id_comuna=9,   provincia='Macul',                   region= 'RM'),
             Distritos(id_distrito=2, nombre='Distrito 2',                   id_comuna=8,   provincia='Puente Alto',             region= 'RM'),
             Distritos(id_distrito=2, nombre='Distrito 2',                   id_comuna=7,   provincia='Perro',                   region= 'RM'),
             Distritos(id_distrito=3, nombre='Distrito Automatizador',       id_comuna=6,   provincia='Gato',                    region= 'AN'),
@@ -179,7 +179,7 @@ class TestMaxLocalesDistrito(unittest.TestCase):
         lista_distritos = [
             Distritos(id_distrito=1, nombre='Distrito Sacapuntas',          id_comuna=0,   provincia='Providencia',             region= 'RM'),
             Distritos(id_distrito=1, nombre='Distrito Sacapuntas',          id_comuna=10,   provincia='Providencia',             region= 'RM'),
-            Distritos(id_distrito=1, nombre='Distrito 2',                   id_comuna=9,   provincia='Macul',                   region= 'RM'),
+            Distritos(id_distrito=2, nombre='Distrito 2',                   id_comuna=9,   provincia='Macul',                   region= 'RM'),
             Distritos(id_distrito=2, nombre='Distrito 2',                   id_comuna=8,   provincia='Puente Alto',             region= 'RM'),
             Distritos(id_distrito=2, nombre='Distrito 2',                   id_comuna=7,   provincia='Perro',                   region= 'RM'),
             Distritos(id_distrito=3, nombre='Distrito Automatizador',       id_comuna=6,   provincia='Gato',                    region= 'AN'),

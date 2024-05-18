@@ -1,344 +1,344 @@
 id_distrito,nombre,id_comuna,provincia,region
-1,Distrito 1,1, Arica, Arica y Parinacota
-1,Distrito 1,2, Parinacota, Arica y Parinacota
-1,Distrito 1,3, Iquique, Tarapacá
-2,Distrito 2,4, El Tamarugal, Tarapacá
-3,Distrito 3,5, Iquique, Tarapacá
-3,Distrito 3,6, Iquique, Tarapacá
-4,Distrito 4,7, Tocopilla, Tarapacá
-5,Distrito 5,8, Tocopilla, Tarapacá
-5,Distrito 5,9, Tocopilla, Tarapacá
-5,Distrito 5,10, Tocopilla, Tarapacá
-5,Distrito 5,11, Tocopilla, Tarapacá
-6,Distrito 6,12, Antofagasta, Antofagasta
-6,Distrito 6,13, Antofagasta, Antofagasta
-6,Distrito 6,14, Antofagasta, Antofagasta
-6,Distrito 6,15, Antofagasta, Antofagasta
-6,Distrito 6,16, El Loa, Antofagasta
-7,Distrito 7,17, El Loa, Antofagasta
-7,Distrito 7,18, El Loa, Antofagasta
-7,Distrito 7,19, Tocopilla, Antofagasta
-7,Distrito 7,20, Tocopilla, Antofagasta
-8,Distrito 8,21, Chañaral, Atacama
-8,Distrito 8,22, Chañaral, Atacama
-8,Distrito 8,23, Copiapó, Atacama
-8,Distrito 8,24, Copiapó, Atacama
-8,Distrito 8,25, Copiapó, Atacama
-8,Distrito 8,26, Huasco, Atacama
-8,Distrito 8,27, Huasco, Atacama
-8,Distrito 8,28, Huasco, Atacama
-8,Distrito 8,29, Huasco, Atacama
-8,Distrito 8,30, Choapa, Coquimbo
-8,Distrito 8,31, Choapa, Coquimbo
-9,Distrito 9,32, Choapa, Coquimbo
-9,Distrito 9,33, Choapa, Coquimbo
-9,Distrito 9,34, Elqui, Coquimbo
-9,Distrito 9,35, Elqui, Coquimbo
-9,Distrito 9,36, Elqui, Coquimbo
-10,Distrito 10,37, Elqui, Coquimbo
-11,Distrito 11,38, Elqui, Coquimbo
-11,Distrito 11,39, Elqui, Coquimbo
-11,Distrito 11,40, Limarí, Coquimbo
-11,Distrito 11,41, Limarí, Coquimbo
-11,Distrito 11,42, Limarí, Coquimbo
-12,Distrito 12,43, Limarí, Coquimbo
-13,Distrito 13,44, Limarí, Coquimbo
-13,Distrito 13,45, Isla de Pascua, Valparaíso
-14,Distrito 14,46, Los Andes, Valparaíso
-14,Distrito 14,47, Los Andes, Valparaíso
-14,Distrito 14,48, Los Andes, Valparaíso
-14,Distrito 14,49, Los Andes, Valparaíso
-14,Distrito 14,50, Petorca, Valparaíso
-15,Distrito 15,51, Petorca, Valparaíso
-15,Distrito 15,52, Petorca, Valparaíso
-15,Distrito 15,53, Petorca, Valparaíso
-16,Distrito 16,54, Quillota, Valparaíso
-17,Distrito 17,55, Quillota, Valparaíso
-18,Distrito 18,56, Quillota, Valparaíso
-18,Distrito 18,57, Quillota, Valparaíso
-18,Distrito 18,58, Quillota, Valparaíso
-18,Distrito 18,59, Quillota, Valparaíso
-18,Distrito 18,60, Quillota, Valparaíso
-19,Distrito 19,61, San Antonio, Valparaíso
-19,Distrito 19,62, San Antonio, Valparaíso
-19,Distrito 19,63, San Antonio, Valparaíso
-19,Distrito 19,64, San Antonio, Valparaíso
-19,Distrito 19,65, San Antonio, Valparaíso
-19,Distrito 19,66, San Antonio, Valparaíso
-20,Distrito 20,67, San Felipe de Aconcagua, Valparaíso
-20,Distrito 20,68, San Felipe de Aconcagua, Valparaíso
-21,Distrito 21,69, San Felipe de Aconcagua, Valparaíso
-21,Distrito 21,70, San Felipe de Aconcagua, Valparaíso
-21,Distrito 21,71, San Felipe de Aconcagua, Valparaíso
-21,Distrito 21,72, San Felipe de Aconcagua, Valparaíso
-21,Distrito 21,73, Valparaiso, Valparaíso
-21,Distrito 21,74, Valparaiso, Valparaíso
-22,Distrito 22,75, Valparaiso, Valparaíso
-22,Distrito 22,76, Valparaiso, Valparaíso
-22,Distrito 22,77, Valparaiso, Valparaíso
-22,Distrito 22,78, Valparaiso, Valparaíso
-23,Distrito 23,79, Valparaiso, Valparaíso
-24,Distrito 24,80, Valparaiso, Valparaíso
-24,Distrito 24,81, Valparaiso, Valparaíso
-24,Distrito 24,82, Chacabuco, Metropolitana de Santiago
-24,Distrito 24,83, Chacabuco, Metropolitana de Santiago
-24,Distrito 24,84, Chacabuco, Metropolitana de Santiago
-24,Distrito 24,85, Cordillera, Metropolitana de Santiago
-24,Distrito 24,86, Cordillera, Metropolitana de Santiago
-24,Distrito 24,87, Cordillera, Metropolitana de Santiago
-24,Distrito 24,88, Maipo, Metropolitana de Santiago
-24,Distrito 24,89, Maipo, Metropolitana de Santiago
-25,Distrito 25,90, Maipo, Metropolitana de Santiago
-25,Distrito 25,91, Maipo, Metropolitana de Santiago
-25,Distrito 25,92, Melipilla, Metropolitana de Santiago
-25,Distrito 25,93, Melipilla, Metropolitana de Santiago
-25,Distrito 25,94, Melipilla, Metropolitana de Santiago
-25,Distrito 25,95, Melipilla, Metropolitana de Santiago
-25,Distrito 25,96, Melipilla, Metropolitana de Santiago
-26,Distrito 26,97, Santiago, Metropolitana de Santiago
-27,Distrito 27,98, Santiago, Metropolitana de Santiago
-27,Distrito 27,99, Santiago, Metropolitana de Santiago
-27,Distrito 27,100, Santiago, Metropolitana de Santiago
-27,Distrito 27,101, Santiago, Metropolitana de Santiago
-27,Distrito 27,102, Santiago, Metropolitana de Santiago
-28,Distrito 28,103, Santiago, Metropolitana de Santiago
-28,Distrito 28,104, Santiago, Metropolitana de Santiago
-28,Distrito 28,105, Santiago, Metropolitana de Santiago
-28,Distrito 28,106, Santiago, Metropolitana de Santiago
-28,Distrito 28,107, Santiago, Metropolitana de Santiago
-28,Distrito 28,108, Santiago, Metropolitana de Santiago
-28,Distrito 28,109, Santiago, Metropolitana de Santiago
-29,Distrito 29,110, Santiago, Metropolitana de Santiago
-30,Distrito 30,111, Santiago, Metropolitana de Santiago
-31,Distrito 31,112, Santiago, Metropolitana de Santiago
-31,Distrito 31,113, Santiago, Metropolitana de Santiago
-31,Distrito 31,114, Santiago, Metropolitana de Santiago
-32,Distrito 32,115, Santiago, Metropolitana de Santiago
-33,Distrito 33,116, Santiago, Metropolitana de Santiago
-34,Distrito 34,117, Santiago, Metropolitana de Santiago
-35,Distrito 35,118, Santiago, Metropolitana de Santiago
-35,Distrito 35,119, Santiago, Metropolitana de Santiago
-36,Distrito 36,120, Santiago, Metropolitana de Santiago
-36,Distrito 36,121, Santiago, Metropolitana de Santiago
-36,Distrito 36,122, Santiago, Metropolitana de Santiago
-36,Distrito 36,123, Santiago, Metropolitana de Santiago
-36,Distrito 36,124, Santiago, Metropolitana de Santiago
-37,Distrito 37,125, Santiago, Metropolitana de Santiago
-37,Distrito 37,126, Santiago, Metropolitana de Santiago
-37,Distrito 37,127, Santiago, Metropolitana de Santiago
-37,Distrito 37,128, Santiago, Metropolitana de Santiago
-37,Distrito 37,129, Talagante, Metropolitana de Santiago
-37,Distrito 37,130, Talagante, Metropolitana de Santiago
-38,Distrito 38,131, Talagante, Metropolitana de Santiago
-38,Distrito 38,132, Talagante, Metropolitana de Santiago
-38,Distrito 38,133, Talagante, Metropolitana de Santiago
-38,Distrito 38,134, Cachapoal, Libertador General Bernardo O'Higgins
-38,Distrito 38,135, Cachapoal, Libertador General Bernardo O'Higgins
-38,Distrito 38,136, Cachapoal, Libertador General Bernardo O'Higgins
-39,Distrito 39,137, Cachapoal, Libertador General Bernardo O'Higgins
-39,Distrito 39,138, Cachapoal, Libertador General Bernardo O'Higgins
-39,Distrito 39,139, Cachapoal, Libertador General Bernardo O'Higgins
-39,Distrito 39,140, Cachapoal, Libertador General Bernardo O'Higgins
-40,Distrito 40,141, Cachapoal, Libertador General Bernardo O'Higgins
-40,Distrito 40,142, Cachapoal, Libertador General Bernardo O'Higgins
-40,Distrito 40,143, Cachapoal, Libertador General Bernardo O'Higgins
-40,Distrito 40,144, Cachapoal, Libertador General Bernardo O'Higgins
-40,Distrito 40,145, Cachapoal, Libertador General Bernardo O'Higgins
-40,Distrito 40,146, Cachapoal, Libertador General Bernardo O'Higgins
-40,Distrito 40,147, Cachapoal, Libertador General Bernardo O'Higgins
-40,Distrito 40,148, Cachapoal, Libertador General Bernardo O'Higgins
-40,Distrito 40,149, Cachapoal, Libertador General Bernardo O'Higgins
-40,Distrito 40,150, Cachapoal, Libertador General Bernardo O'Higgins
-40,Distrito 40,151, Cardenal Caro, Libertador General Bernardo O'Higgins
-41,Distrito 41,152, Cardenal Caro, Libertador General Bernardo O'Higgins
-41,Distrito 41,153, Cardenal Caro, Libertador General Bernardo O'Higgins
-41,Distrito 41,154, Cardenal Caro, Libertador General Bernardo O'Higgins
-41,Distrito 41,155, Cardenal Caro, Libertador General Bernardo O'Higgins
-41,Distrito 41,156, Cardenal Caro, Libertador General Bernardo O'Higgins
-41,Distrito 41,157, Curicó, Maule
-41,Distrito 41,158, Curicó, Maule
-41,Distrito 41,159, Curicó, Maule
-41,Distrito 41,160, Curicó, Maule
-41,Distrito 41,161, Curicó, Maule
-41,Distrito 41,162, Curicó, Maule
-41,Distrito 41,163, Curicó, Maule
-41,Distrito 41,164, Curicó, Maule
-41,Distrito 41,165, Curicó, Maule
-42,Distrito 42,166, Curicó, Maule
-42,Distrito 42,167, Cauquenes, Maule
-42,Distrito 42,168, Cauquenes, Maule
-42,Distrito 42,169, Cauquenes, Maule
-43,Distrito 43,170, Curicó, Maule
-44,Distrito 44,171, Curicó, Maule
-45,Distrito 45,172, Curicó, Maule
-45,Distrito 45,173, Curicó, Maule
-45,Distrito 45,174, Curicó, Maule
-45,Distrito 45,175, Curicó, Maule
-45,Distrito 45,176, Curicó, Maule
-45,Distrito 45,177, Curicó, Maule
-45,Distrito 45,178, Curicó, Maule
-46,Distrito 46,179, Linares, Maule
-46,Distrito 46,180, Linares, Maule
-46,Distrito 46,181, Linares, Maule
-46,Distrito 46,182, Linares, Maule
-46,Distrito 46,183, Linares, Maule
-46,Distrito 46,184, Linares, Maule
-46,Distrito 46,185, Linares, Maule
-46,Distrito 46,186, Linares, Maule
-46,Distrito 46,187, Talca, Maule
-47,Distrito 47,188, Talca, Maule
-47,Distrito 47,189, Talca, Maule
-47,Distrito 47,190, Talca, Maule
-47,Distrito 47,191, Talca, Maule
-47,Distrito 47,192, Talca, Maule
-47,Distrito 47,193, Talca, Maule
-48,Distrito 48,194, Talca, Maule
-49,Distrito 49,195, Talca, Maule
-50,Distrito 50,196, Talca, Maule
-51,Distrito 51,197, Arauco, Biobío
-51,Distrito 51,198, Arauco, Biobío
-51,Distrito 51,199, Arauco, Biobío
-52,Distrito 52,200, Arauco, Biobío
-52,Distrito 52,201, Arauco, Biobío
-52,Distrito 52,202, Arauco, Biobío
-52,Distrito 52,203, Arauco, Biobío
-52,Distrito 52,204, Biobío, Biobío
-52,Distrito 52,205, Biobío, Biobío
-52,Distrito 52,206, Biobío, Biobío
-52,Distrito 52,207, Biobío, Biobío
-53,Distrito 53,208, Biobío, Biobío
-53,Distrito 53,209, Biobío, Biobío
-53,Distrito 53,210, Biobío, Biobío
-53,Distrito 53,211, Biobío, Biobío
-53,Distrito 53,212, Biobío, Biobío
-53,Distrito 53,213, Biobío, Biobío
-54,Distrito 54,214, Biobío, Biobío
-54,Distrito 54,215, Biobío, Biobío
-54,Distrito 54,216, Biobío, Biobío
-54,Distrito 54,217, Biobío, Biobío
-54,Distrito 54,218, Concepción, Biobío
-54,Distrito 54,219, Concepción, Biobío
-54,Distrito 54,220, Concepción, Biobío
-55,Distrito 55,221, Concepción, Biobío
-55,Distrito 55,222, Concepción, Biobío
-55,Distrito 55,223, Concepción, Biobío
-55,Distrito 55,224, Concepción, Biobío
-55,Distrito 55,225, Concepción, Biobío
-55,Distrito 55,226, Concepción, Biobío
-56,Distrito 56,227, Concepción, Biobío
-56,Distrito 56,228, Concepción, Biobío
-56,Distrito 56,229, Concepción, Biobío
-56,Distrito 56,230, Diguillín, Ñuble
-56,Distrito 56,231, Diguillín, Ñuble
-57,Distrito 57,232, Diguillín, Ñuble
-57,Distrito 57,233, Itata, Ñuble
-57,Distrito 57,234, Itata, Ñuble
-57,Distrito 57,235, Diguillín, Ñuble
-57,Distrito 57,236, Diguillín, Ñuble
-58,Distrito 58,237, Itata, Ñuble
-58,Distrito 58,238, Diguillín, Ñuble
-58,Distrito 58,239, Diguillín, Ñuble
-58,Distrito 58,240, Diguillín, Ñuble
-59,Distrito 59,241, Diguillín, Ñuble
-59,Distrito 59,242, Diguillín, Ñuble
-59,Distrito 59,243, Itata, Ñuble
-59,Distrito 59,244, Diguillín, Ñuble
-59,Distrito 59,245, Punilla, Ñuble
-59,Distrito 59,246, Punilla, Ñuble
-60,Distrito 60,247, Diguillín, Ñuble
-61,Distrito 61,248, Punilla, Ñuble
-62,Distrito 62,249, Itata, Ñuble
-62,Distrito 62,250, Punilla, Ñuble
-62,Distrito 62,251, Cautín, La Araucanía
-62,Distrito 62,252, Cautín, La Araucanía
-62,Distrito 62,253, Cautín, La Araucanía
-62,Distrito 62,254, Cautín, La Araucanía
-62,Distrito 62,255, Cautín, La Araucanía
-62,Distrito 62,256, Cautín, La Araucanía
-63,Distrito 63,257, Cautín, La Araucanía
-64,Distrito 64,258, Cautín, La Araucanía
-65,Distrito 65,259, Cautín, La Araucanía
-65,Distrito 65,260, Cautín, La Araucanía
-65,Distrito 65,261, Cautín, La Araucanía
-65,Distrito 65,262, Cautín, La Araucanía
-65,Distrito 65,263, Cautín, La Araucanía
-65,Distrito 65,264, Cautín, La Araucanía
-66,Distrito 66,265, Cautín, La Araucanía
-66,Distrito 66,266, Cautín, La Araucanía
-67,Distrito 67,267, Cautín, La Araucanía
-68,Distrito 68,268, Cautín, La Araucanía
-68,Distrito 68,269, Cautín, La Araucanía
-68,Distrito 68,270, Cautín, La Araucanía
-68,Distrito 68,271, Cautín, La Araucanía
-69,Distrito 69,272, Malleco, La Araucanía
-69,Distrito 69,273, Malleco, La Araucanía
-69,Distrito 69,274, Malleco, La Araucanía
-69,Distrito 69,275, Malleco, La Araucanía
-69,Distrito 69,276, Malleco, La Araucanía
-69,Distrito 69,277, Malleco, La Araucanía
-69,Distrito 69,278, Malleco, La Araucanía
-70,Distrito 70,279, Malleco, La Araucanía
-70,Distrito 70,280, Malleco, La Araucanía
-70,Distrito 70,281, Malleco, La Araucanía
-70,Distrito 70,282, Malleco, La Araucanía
-70,Distrito 70,283, Valdivia, Los Ríos
-70,Distrito 70,284, Valdivia, Los Ríos
-70,Distrito 70,285, Valdivia, Los Ríos
-70,Distrito 70,286, Valdivia, Los Ríos
-71,Distrito 71,287, Valdivia, Los Ríos
-71,Distrito 71,288, Valdivia, Los Ríos
-71,Distrito 71,289, Valdivia, Los Ríos
-71,Distrito 71,290, Valdivia, Los Ríos
-72,Distrito 72,291, Ranco, Los Ríos
-72,Distrito 72,292, Ranco, Los Ríos
-73,Distrito 73,293, Ranco, Los Ríos
-73,Distrito 73,294, Ranco, Los Ríos
-73,Distrito 73,295, Chiloé, Los Lagos
-74,Distrito 74,296, Chiloé, Los Lagos
-74,Distrito 74,297, Chiloé, Los Lagos
-74,Distrito 74,298, Chiloé, Los Lagos
-75,Distrito 75,299, Chiloé, Los Lagos
-75,Distrito 75,300, Chiloé, Los Lagos
-75,Distrito 75,301, Chiloé, Los Lagos
-75,Distrito 75,302, Chiloé, Los Lagos
-75,Distrito 75,303, Chiloé, Los Lagos
-75,Distrito 75,304, Chiloé, Los Lagos
-75,Distrito 75,305, Llanquihue, Los Lagos
-76,Distrito 76,306, Llanquihue, Los Lagos
-77,Distrito 77,307, Llanquihue, Los Lagos
-77,Distrito 77,308, Llanquihue, Los Lagos
-77,Distrito 77,309, Llanquihue, Los Lagos
-77,Distrito 77,310, Llanquihue, Los Lagos
-77,Distrito 77,311, Llanquihue, Los Lagos
-77,Distrito 77,312, Llanquihue, Los Lagos
-78,Distrito 78,313, Llanquihue, Los Lagos
-78,Distrito 78,314, Osorno, Los Lagos
-79,Distrito 79,315, Osorno, Los Lagos
-79,Distrito 79,316, Osorno, Los Lagos
-80,Distrito 80,317, Osorno, Los Lagos
-81,Distrito 81,318, Osorno, Los Lagos
-82,Distrito 82,319, Osorno, Los Lagos
-82,Distrito 82,320, Osorno, Los Lagos
-82,Distrito 82,321, Palena, Los Lagos
-82,Distrito 82,322, Palena, Los Lagos
-82,Distrito 82,323, Palena, Los Lagos
-82,Distrito 82,324, Palena, Los Lagos
-83,Distrito 83,325, Aysén, Aysén del General Carlos Ibáñez del Campo
-83,Distrito 83,326, Aysén, Aysén del General Carlos Ibáñez del Campo
-83,Distrito 83,327, Aysén, Aysén del General Carlos Ibáñez del Campo
-84,Distrito 84,328, Capitán Prat, Aysén del General Carlos Ibáñez del Campo
-84,Distrito 84,329, Capitán Prat, Aysén del General Carlos Ibáñez del Campo
-84,Distrito 84,330, Capitán Prat, Aysén del General Carlos Ibáñez del Campo
-84,Distrito 84,331, General Carrera, Aysén del General Carlos Ibáñez del Campo
-84,Distrito 84,332, General Carrera, Aysén del General Carlos Ibáñez del Campo
-85,Distrito 85,333, Antártica Chilena, Magallanes y de la Antártica Chilena
-86,Distrito 86,334, Antártica Chilena, Magallanes y de la Antártica Chilena
-86,Distrito 86,335, Magallanes, Magallanes y de la Antártica Chilena
-86,Distrito 86,336, Magallanes, Magallanes y de la Antártica Chilena
-86,Distrito 86,337, Magallanes, Magallanes y de la Antártica Chilena
-86,Distrito 86,338, Magallanes, Magallanes y de la Antártica Chilena
-87,Distrito 87,339, Tierra del Fuego, Magallanes y de la Antártica Chilena
-88,Distrito 88,340, Tierra del Fuego, Magallanes y de la Antártica Chilena
-88,Distrito 88,341, Tierra del Fuego, Magallanes y de la Antártica Chilena
-88,Distrito 88,342, Última Esperanza, Magallanes y de la Antártica Chilena
-89,Distrito 89,343, Última Esperanza, Magallanes y de la Antártica Chilena
+1,Distrito 1,1,Arica,Arica y Parinacota
+1,Distrito 1,2,Parinacota,Arica y Parinacota
+1,Distrito 1,3,Iquique,Tarapacá
+2,Distrito 2,4,El Tamarugal,Tarapacá
+3,Distrito 3,5,Iquique,Tarapacá
+3,Distrito 3,6,Iquique,Tarapacá
+4,Distrito 4,7,Tocopilla,Tarapacá
+5,Distrito 5,8,Tocopilla,Tarapacá
+5,Distrito 5,9,Tocopilla,Tarapacá
+5,Distrito 5,10,Tocopilla,Tarapacá
+5,Distrito 5,11,Tocopilla,Tarapacá
+6,Distrito 6,12,Antofagasta,Antofagasta
+6,Distrito 6,13,Antofagasta,Antofagasta
+6,Distrito 6,14,Antofagasta,Antofagasta
+6,Distrito 6,15,Antofagasta,Antofagasta
+6,Distrito 6,16,El Loa,Antofagasta
+7,Distrito 7,17,El Loa,Antofagasta
+7,Distrito 7,18,El Loa,Antofagasta
+7,Distrito 7,19,Tocopilla,Antofagasta
+7,Distrito 7,20,Tocopilla,Antofagasta
+8,Distrito 8,21,Chañaral,Atacama
+8,Distrito 8,22,Chañaral,Atacama
+8,Distrito 8,23,Copiapó,Atacama
+8,Distrito 8,24,Copiapó,Atacama
+8,Distrito 8,25,Copiapó,Atacama
+8,Distrito 8,26,Huasco,Atacama
+8,Distrito 8,27,Huasco,Atacama
+8,Distrito 8,28,Huasco,Atacama
+8,Distrito 8,29,Huasco,Atacama
+8,Distrito 8,30,Choapa,Coquimbo
+8,Distrito 8,31,Choapa,Coquimbo
+9,Distrito 9,32,Choapa,Coquimbo
+9,Distrito 9,33,Choapa,Coquimbo
+9,Distrito 9,34,Elqui,Coquimbo
+9,Distrito 9,35,Elqui,Coquimbo
+9,Distrito 9,36,Elqui,Coquimbo
+10,Distrito 10,37,Elqui,Coquimbo
+11,Distrito 11,38,Elqui,Coquimbo
+11,Distrito 11,39,Elqui,Coquimbo
+11,Distrito 11,40,Limarí,Coquimbo
+11,Distrito 11,41,Limarí,Coquimbo
+11,Distrito 11,42,Limarí,Coquimbo
+12,Distrito 12,43,Limarí,Coquimbo
+13,Distrito 13,44,Limarí,Coquimbo
+13,Distrito 13,45,Isla de Pascua,Valparaíso
+14,Distrito 14,46,Los Andes,Valparaíso
+14,Distrito 14,47,Los Andes,Valparaíso
+14,Distrito 14,48,Los Andes,Valparaíso
+14,Distrito 14,49,Los Andes,Valparaíso
+14,Distrito 14,50,Petorca,Valparaíso
+15,Distrito 15,51,Petorca,Valparaíso
+15,Distrito 15,52,Petorca,Valparaíso
+15,Distrito 15,53,Petorca,Valparaíso
+16,Distrito 16,54,Quillota,Valparaíso
+17,Distrito 17,55,Quillota,Valparaíso
+18,Distrito 18,56,Quillota,Valparaíso
+18,Distrito 18,57,Quillota,Valparaíso
+18,Distrito 18,58,Quillota,Valparaíso
+18,Distrito 18,59,Quillota,Valparaíso
+18,Distrito 18,60,Quillota,Valparaíso
+19,Distrito 19,61,San Antonio,Valparaíso
+19,Distrito 19,62,San Antonio,Valparaíso
+19,Distrito 19,63,San Antonio,Valparaíso
+19,Distrito 19,64,San Antonio,Valparaíso
+19,Distrito 19,65,San Antonio,Valparaíso
+19,Distrito 19,66,San Antonio,Valparaíso
+20,Distrito 20,67,San Felipe de Aconcagua,Valparaíso
+20,Distrito 20,68,San Felipe de Aconcagua,Valparaíso
+21,Distrito 21,69,San Felipe de Aconcagua,Valparaíso
+21,Distrito 21,70,San Felipe de Aconcagua,Valparaíso
+21,Distrito 21,71,San Felipe de Aconcagua,Valparaíso
+21,Distrito 21,72,San Felipe de Aconcagua,Valparaíso
+21,Distrito 21,73,Valparaiso,Valparaíso
+21,Distrito 21,74,Valparaiso,Valparaíso
+22,Distrito 22,75,Valparaiso,Valparaíso
+22,Distrito 22,76,Valparaiso,Valparaíso
+22,Distrito 22,77,Valparaiso,Valparaíso
+22,Distrito 22,78,Valparaiso,Valparaíso
+23,Distrito 23,79,Valparaiso,Valparaíso
+24,Distrito 24,80,Valparaiso,Valparaíso
+24,Distrito 24,81,Valparaiso,Valparaíso
+24,Distrito 24,82,Chacabuco,Metropolitana de Santiago
+24,Distrito 24,83,Chacabuco,Metropolitana de Santiago
+24,Distrito 24,84,Chacabuco,Metropolitana de Santiago
+24,Distrito 24,85,Cordillera,Metropolitana de Santiago
+24,Distrito 24,86,Cordillera,Metropolitana de Santiago
+24,Distrito 24,87,Cordillera,Metropolitana de Santiago
+24,Distrito 24,88,Maipo,Metropolitana de Santiago
+24,Distrito 24,89,Maipo,Metropolitana de Santiago
+25,Distrito 25,90,Maipo,Metropolitana de Santiago
+25,Distrito 25,91,Maipo,Metropolitana de Santiago
+25,Distrito 25,92,Melipilla,Metropolitana de Santiago
+25,Distrito 25,93,Melipilla,Metropolitana de Santiago
+25,Distrito 25,94,Melipilla,Metropolitana de Santiago
+25,Distrito 25,95,Melipilla,Metropolitana de Santiago
+25,Distrito 25,96,Melipilla,Metropolitana de Santiago
+26,Distrito 26,97,Santiago,Metropolitana de Santiago
+27,Distrito 27,98,Santiago,Metropolitana de Santiago
+27,Distrito 27,99,Santiago,Metropolitana de Santiago
+27,Distrito 27,100,Santiago,Metropolitana de Santiago
+27,Distrito 27,101,Santiago,Metropolitana de Santiago
+27,Distrito 27,102,Santiago,Metropolitana de Santiago
+28,Distrito 28,103,Santiago,Metropolitana de Santiago
+28,Distrito 28,104,Santiago,Metropolitana de Santiago
+28,Distrito 28,105,Santiago,Metropolitana de Santiago
+28,Distrito 28,106,Santiago,Metropolitana de Santiago
+28,Distrito 28,107,Santiago,Metropolitana de Santiago
+28,Distrito 28,108,Santiago,Metropolitana de Santiago
+28,Distrito 28,109,Santiago,Metropolitana de Santiago
+29,Distrito 29,110,Santiago,Metropolitana de Santiago
+30,Distrito 30,111,Santiago,Metropolitana de Santiago
+31,Distrito 31,112,Santiago,Metropolitana de Santiago
+31,Distrito 31,113,Santiago,Metropolitana de Santiago
+31,Distrito 31,114,Santiago,Metropolitana de Santiago
+32,Distrito 32,115,Santiago,Metropolitana de Santiago
+33,Distrito 33,116,Santiago,Metropolitana de Santiago
+34,Distrito 34,117,Santiago,Metropolitana de Santiago
+35,Distrito 35,118,Santiago,Metropolitana de Santiago
+35,Distrito 35,119,Santiago,Metropolitana de Santiago
+36,Distrito 36,120,Santiago,Metropolitana de Santiago
+36,Distrito 36,121,Santiago,Metropolitana de Santiago
+36,Distrito 36,122,Santiago,Metropolitana de Santiago
+36,Distrito 36,123,Santiago,Metropolitana de Santiago
+36,Distrito 36,124,Santiago,Metropolitana de Santiago
+37,Distrito 37,125,Santiago,Metropolitana de Santiago
+37,Distrito 37,126,Santiago,Metropolitana de Santiago
+37,Distrito 37,127,Santiago,Metropolitana de Santiago
+37,Distrito 37,128,Santiago,Metropolitana de Santiago
+37,Distrito 37,129,Talagante,Metropolitana de Santiago
+37,Distrito 37,130,Talagante,Metropolitana de Santiago
+38,Distrito 38,131,Talagante,Metropolitana de Santiago
+38,Distrito 38,132,Talagante,Metropolitana de Santiago
+38,Distrito 38,133,Talagante,Metropolitana de Santiago
+38,Distrito 38,134,Cachapoal,Libertador General Bernardo O'Higgins
+38,Distrito 38,135,Cachapoal,Libertador General Bernardo O'Higgins
+38,Distrito 38,136,Cachapoal,Libertador General Bernardo O'Higgins
+39,Distrito 39,137,Cachapoal,Libertador General Bernardo O'Higgins
+39,Distrito 39,138,Cachapoal,Libertador General Bernardo O'Higgins
+39,Distrito 39,139,Cachapoal,Libertador General Bernardo O'Higgins
+39,Distrito 39,140,Cachapoal,Libertador General Bernardo O'Higgins
+40,Distrito 40,141,Cachapoal,Libertador General Bernardo O'Higgins
+40,Distrito 40,142,Cachapoal,Libertador General Bernardo O'Higgins
+40,Distrito 40,143,Cachapoal,Libertador General Bernardo O'Higgins
+40,Distrito 40,144,Cachapoal,Libertador General Bernardo O'Higgins
+40,Distrito 40,145,Cachapoal,Libertador General Bernardo O'Higgins
+40,Distrito 40,146,Cachapoal,Libertador General Bernardo O'Higgins
+40,Distrito 40,147,Cachapoal,Libertador General Bernardo O'Higgins
+40,Distrito 40,148,Cachapoal,Libertador General Bernardo O'Higgins
+40,Distrito 40,149,Cachapoal,Libertador General Bernardo O'Higgins
+40,Distrito 40,150,Cachapoal,Libertador General Bernardo O'Higgins
+40,Distrito 40,151,Cardenal Caro,Libertador General Bernardo O'Higgins
+41,Distrito 41,152,Cardenal Caro,Libertador General Bernardo O'Higgins
+41,Distrito 41,153,Cardenal Caro,Libertador General Bernardo O'Higgins
+41,Distrito 41,154,Cardenal Caro,Libertador General Bernardo O'Higgins
+41,Distrito 41,155,Cardenal Caro,Libertador General Bernardo O'Higgins
+41,Distrito 41,156,Cardenal Caro,Libertador General Bernardo O'Higgins
+41,Distrito 41,157,Curicó,Maule
+41,Distrito 41,158,Curicó,Maule
+41,Distrito 41,159,Curicó,Maule
+41,Distrito 41,160,Curicó,Maule
+41,Distrito 41,161,Curicó,Maule
+41,Distrito 41,162,Curicó,Maule
+41,Distrito 41,163,Curicó,Maule
+41,Distrito 41,164,Curicó,Maule
+41,Distrito 41,165,Curicó,Maule
+42,Distrito 42,166,Curicó,Maule
+42,Distrito 42,167,Cauquenes,Maule
+42,Distrito 42,168,Cauquenes,Maule
+42,Distrito 42,169,Cauquenes,Maule
+43,Distrito 43,170,Curicó,Maule
+44,Distrito 44,171,Curicó,Maule
+45,Distrito 45,172,Curicó,Maule
+45,Distrito 45,173,Curicó,Maule
+45,Distrito 45,174,Curicó,Maule
+45,Distrito 45,175,Curicó,Maule
+45,Distrito 45,176,Curicó,Maule
+45,Distrito 45,177,Curicó,Maule
+45,Distrito 45,178,Curicó,Maule
+46,Distrito 46,179,Linares,Maule
+46,Distrito 46,180,Linares,Maule
+46,Distrito 46,181,Linares,Maule
+46,Distrito 46,182,Linares,Maule
+46,Distrito 46,183,Linares,Maule
+46,Distrito 46,184,Linares,Maule
+46,Distrito 46,185,Linares,Maule
+46,Distrito 46,186,Linares,Maule
+46,Distrito 46,187,Talca,Maule
+47,Distrito 47,188,Talca,Maule
+47,Distrito 47,189,Talca,Maule
+47,Distrito 47,190,Talca,Maule
+47,Distrito 47,191,Talca,Maule
+47,Distrito 47,192,Talca,Maule
+47,Distrito 47,193,Talca,Maule
+48,Distrito 48,194,Talca,Maule
+49,Distrito 49,195,Talca,Maule
+50,Distrito 50,196,Talca,Maule
+51,Distrito 51,197,Arauco,Biobío
+51,Distrito 51,198,Arauco,Biobío
+51,Distrito 51,199,Arauco,Biobío
+52,Distrito 52,200,Arauco,Biobío
+52,Distrito 52,201,Arauco,Biobío
+52,Distrito 52,202,Arauco,Biobío
+52,Distrito 52,203,Arauco,Biobío
+52,Distrito 52,204,Biobío,Biobío
+52,Distrito 52,205,Biobío,Biobío
+52,Distrito 52,206,Biobío,Biobío
+52,Distrito 52,207,Biobío,Biobío
+53,Distrito 53,208,Biobío,Biobío
+53,Distrito 53,209,Biobío,Biobío
+53,Distrito 53,210,Biobío,Biobío
+53,Distrito 53,211,Biobío,Biobío
+53,Distrito 53,212,Biobío,Biobío
+53,Distrito 53,213,Biobío,Biobío
+54,Distrito 54,214,Biobío,Biobío
+54,Distrito 54,215,Biobío,Biobío
+54,Distrito 54,216,Biobío,Biobío
+54,Distrito 54,217,Biobío,Biobío
+54,Distrito 54,218,Concepción,Biobío
+54,Distrito 54,219,Concepción,Biobío
+54,Distrito 54,220,Concepción,Biobío
+55,Distrito 55,221,Concepción,Biobío
+55,Distrito 55,222,Concepción,Biobío
+55,Distrito 55,223,Concepción,Biobío
+55,Distrito 55,224,Concepción,Biobío
+55,Distrito 55,225,Concepción,Biobío
+55,Distrito 55,226,Concepción,Biobío
+56,Distrito 56,227,Concepción,Biobío
+56,Distrito 56,228,Concepción,Biobío
+56,Distrito 56,229,Concepción,Biobío
+56,Distrito 56,230,Diguillín,Ñuble
+56,Distrito 56,231,Diguillín,Ñuble
+57,Distrito 57,232,Diguillín,Ñuble
+57,Distrito 57,233,Itata,Ñuble
+57,Distrito 57,234,Itata,Ñuble
+57,Distrito 57,235,Diguillín,Ñuble
+57,Distrito 57,236,Diguillín,Ñuble
+58,Distrito 58,237,Itata,Ñuble
+58,Distrito 58,238,Diguillín,Ñuble
+58,Distrito 58,239,Diguillín,Ñuble
+58,Distrito 58,240,Diguillín,Ñuble
+59,Distrito 59,241,Diguillín,Ñuble
+59,Distrito 59,242,Diguillín,Ñuble
+59,Distrito 59,243,Itata,Ñuble
+59,Distrito 59,244,Diguillín,Ñuble
+59,Distrito 59,245,Punilla,Ñuble
+59,Distrito 59,246,Punilla,Ñuble
+60,Distrito 60,247,Diguillín,Ñuble
+61,Distrito 61,248,Punilla,Ñuble
+62,Distrito 62,249,Itata,Ñuble
+62,Distrito 62,250,Punilla,Ñuble
+62,Distrito 62,251,Cautín,La Araucanía
+62,Distrito 62,252,Cautín,La Araucanía
+62,Distrito 62,253,Cautín,La Araucanía
+62,Distrito 62,254,Cautín,La Araucanía
+62,Distrito 62,255,Cautín,La Araucanía
+62,Distrito 62,256,Cautín,La Araucanía
+63,Distrito 63,257,Cautín,La Araucanía
+64,Distrito 64,258,Cautín,La Araucanía
+65,Distrito 65,259,Cautín,La Araucanía
+65,Distrito 65,260,Cautín,La Araucanía
+65,Distrito 65,261,Cautín,La Araucanía
+65,Distrito 65,262,Cautín,La Araucanía
+65,Distrito 65,263,Cautín,La Araucanía
+65,Distrito 65,264,Cautín,La Araucanía
+66,Distrito 66,265,Cautín,La Araucanía
+66,Distrito 66,266,Cautín,La Araucanía
+67,Distrito 67,267,Cautín,La Araucanía
+68,Distrito 68,268,Cautín,La Araucanía
+68,Distrito 68,269,Cautín,La Araucanía
+68,Distrito 68,270,Cautín,La Araucanía
+68,Distrito 68,271,Cautín,La Araucanía
+69,Distrito 69,272,Malleco,La Araucanía
+69,Distrito 69,273,Malleco,La Araucanía
+69,Distrito 69,274,Malleco,La Araucanía
+69,Distrito 69,275,Malleco,La Araucanía
+69,Distrito 69,276,Malleco,La Araucanía
+69,Distrito 69,277,Malleco,La Araucanía
+69,Distrito 69,278,Malleco,La Araucanía
+70,Distrito 70,279,Malleco,La Araucanía
+70,Distrito 70,280,Malleco,La Araucanía
+70,Distrito 70,281,Malleco,La Araucanía
+70,Distrito 70,282,Malleco,La Araucanía
+70,Distrito 70,283,Valdivia,Los Ríos
+70,Distrito 70,284,Valdivia,Los Ríos
+70,Distrito 70,285,Valdivia,Los Ríos
+70,Distrito 70,286,Valdivia,Los Ríos
+71,Distrito 71,287,Valdivia,Los Ríos
+71,Distrito 71,288,Valdivia,Los Ríos
+71,Distrito 71,289,Valdivia,Los Ríos
+71,Distrito 71,290,Valdivia,Los Ríos
+72,Distrito 72,291,Ranco,Los Ríos
+72,Distrito 72,292,Ranco,Los Ríos
+73,Distrito 73,293,Ranco,Los Ríos
+73,Distrito 73,294,Ranco,Los Ríos
+73,Distrito 73,295,Chiloé,Los Lagos
+74,Distrito 74,296,Chiloé,Los Lagos
+74,Distrito 74,297,Chiloé,Los Lagos
+74,Distrito 74,298,Chiloé,Los Lagos
+75,Distrito 75,299,Chiloé,Los Lagos
+75,Distrito 75,300,Chiloé,Los Lagos
+75,Distrito 75,301,Chiloé,Los Lagos
+75,Distrito 75,302,Chiloé,Los Lagos
+75,Distrito 75,303,Chiloé,Los Lagos
+75,Distrito 75,304,Chiloé,Los Lagos
+75,Distrito 75,305,Llanquihue,Los Lagos
+76,Distrito 76,306,Llanquihue,Los Lagos
+77,Distrito 77,307,Llanquihue,Los Lagos
+77,Distrito 77,308,Llanquihue,Los Lagos
+77,Distrito 77,309,Llanquihue,Los Lagos
+77,Distrito 77,310,Llanquihue,Los Lagos
+77,Distrito 77,311,Llanquihue,Los Lagos
+77,Distrito 77,312,Llanquihue,Los Lagos
+78,Distrito 78,313,Llanquihue,Los Lagos
+78,Distrito 78,314,Osorno,Los Lagos
+79,Distrito 79,315,Osorno,Los Lagos
+79,Distrito 79,316,Osorno,Los Lagos
+80,Distrito 80,317,Osorno,Los Lagos
+81,Distrito 81,318,Osorno,Los Lagos
+82,Distrito 82,319,Osorno,Los Lagos
+82,Distrito 82,320,Osorno,Los Lagos
+82,Distrito 82,321,Palena,Los Lagos
+82,Distrito 82,322,Palena,Los Lagos
+82,Distrito 82,323,Palena,Los Lagos
+82,Distrito 82,324,Palena,Los Lagos
+83,Distrito 83,325,Aysén,Aysén del General Carlos Ibáñez del Campo
+83,Distrito 83,326,Aysén,Aysén del General Carlos Ibáñez del Campo
+83,Distrito 83,327,Aysén,Aysén del General Carlos Ibáñez del Campo
+84,Distrito 84,328,Capitán Prat,Aysén del General Carlos Ibáñez del Campo
+84,Distrito 84,329,Capitán Prat,Aysén del General Carlos Ibáñez del Campo
+84,Distrito 84,330,Capitán Prat,Aysén del General Carlos Ibáñez del Campo
+84,Distrito 84,331,General Carrera,Aysén del General Carlos Ibáñez del Campo
+84,Distrito 84,332,General Carrera,Aysén del General Carlos Ibáñez del Campo
+85,Distrito 85,333,Antártica Chilena,Magallanes y de la Antártica Chilena
+86,Distrito 86,334,Antártica Chilena,Magallanes y de la Antártica Chilena
+86,Distrito 86,335,Magallanes,Magallanes y de la Antártica Chilena
+86,Distrito 86,336,Magallanes,Magallanes y de la Antártica Chilena
+86,Distrito 86,337,Magallanes,Magallanes y de la Antártica Chilena
+86,Distrito 86,338,Magallanes,Magallanes y de la Antártica Chilena
+87,Distrito 87,339,Tierra del Fuego,Magallanes y de la Antártica Chilena
+88,Distrito 88,340,Tierra del Fuego,Magallanes y de la Antártica Chilena
+88,Distrito 88,341,Tierra del Fuego,Magallanes y de la Antártica Chilena
+88,Distrito 88,342,Última Esperanza,Magallanes y de la Antártica Chilena
+89,Distrito 89,343,Última Esperanza,Magallanes y de la Antártica Chilena
