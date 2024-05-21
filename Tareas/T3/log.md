@@ -53,3 +53,7 @@
       Esto es ya que el enunciado indicaba que debía ir en la definición de dicha función. Esto hará que el código del `test_4` de `test_18_votos_interespecie.py` no se caiga por dicho problema. Se subió al syllabus un archivo `consultas.py` con el parámetro agregado en la función. Deben editar su `consultas.py` para incluir dicho argumento.
 
 5. En el archivo `test_20_votos_validos.py`, en los tests existían instancias de animales con la especie `Pex dorado`, cuando debería ser `Pez dorado`. Se reemplazo el texto correspondiente. Esto hará que el código no se caiga en caso de encontrar una especie que no tiene conversión de edad en el generador de `ponderadores`, ya que es algo que el enunciado no pidió explicitamente.
+
+> 20-05-2024
+
+1. En los archivos `ponderadores.csv`, se eliminaron algunas especies duplicadas. De la misma forma, el archivo `test_solution.py` fue actualizado para que se tomen en cuenta estos cambios al momento de correr los tests.
