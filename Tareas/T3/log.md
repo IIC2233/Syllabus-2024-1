@@ -56,6 +56,6 @@
 
 > 20-05-2024
 
-1. En los archivos `ponderadores.csv`, se eliminaron algunas especies duplicadas. De la misma forma, el archivo `test_solution.py` fue actualizado para que se tomen en cuenta estos cambios al momento de correr los tests. 
+1. En los archivos `ponderadores.csv`, se eliminaron algunas especies duplicadas. De la misma forma, el archivo `test_solution.py` y `test_base_cargar_datos.py`fueron actualizados para que se tomen en cuenta estos cambios al momento de correr los tests. 
 2. Se actualizó el enunciado agregando una línea al disclamer aclarando que los comandos que permitan crear o cambiar una estructura de dato a otra sin aplicar comprensión (o que no sean utilizadas dentro de un reduce o de una función
 generadora) estarán prohibidas. 

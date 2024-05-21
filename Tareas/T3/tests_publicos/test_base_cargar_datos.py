@@ -148,7 +148,7 @@ class TestCargarDatos(unittest.TestCase):
 
         # Revisar largo
         generador = list(generador)
-        self.assertEqual(len(generador), 208)
+        self.assertEqual(len(generador), 190)
 
         # Revisar posiciones aleatorias
         ponderadores_cargados = [generador[0], generador[18],
