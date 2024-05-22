@@ -59,3 +59,10 @@
 1. En los archivos `ponderadores.csv`, se eliminaron algunas especies duplicadas. De la misma forma, el archivo `test_solution.py` y `test_base_cargar_datos.py`fueron actualizados para que se tomen en cuenta estos cambios al momento de correr los tests. 
 2. Se actualizó el enunciado agregando una línea al disclamer aclarando que los comandos que permitan crear o cambiar una estructura de dato a otra sin aplicar comprensión (o que no sean utilizadas dentro de un reduce o de una función
 generadora) estarán prohibidas. 
+
+
+> 22-05-2024
+1. Se publicó el archivo `test_elementos_prohibidos.pyc` como apoyo para realizar la tarea.
+
+2. Se modificó la consulta `distritos_mas_votos_especie_bisiestos()` para pedir de retorno los id de los distritos, en vez del nombre de los distritos.
+
