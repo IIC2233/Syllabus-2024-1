@@ -65,4 +65,6 @@ generadora) estarán prohibidas.
 1. Se publicó el archivo `test_elementos_prohibidos.pyc` como apoyo para realizar la tarea.
 
 2. Se modificó la consulta `distritos_mas_votos_especie_bisiestos()` para pedir de retorno los id de los distritos, en vez del nombre de los distritos.
+  
+3. Se actualizó `test_elementos_prohibidos.pyc` por un error detectado en la issue [405](https://github.com/IIC2233/Syllabus/issues/405).
 
