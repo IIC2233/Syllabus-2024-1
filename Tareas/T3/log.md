@@ -68,3 +68,7 @@ generadora) estarán prohibidas.
   
 3. Se actualizó `test_elementos_prohibidos.pyc` por un error detectado en la issue [405](https://github.com/IIC2233/Syllabus/issues/405).
 
+
+> 23-05-2024
+  
+1. Se actualizó `test_elementos_prohibidos.pyc` por un error detectado en la issue [421](https://github.com/IIC2233/Syllabus/issues/421). Además, la version publicada del script era más estricta de lo indicado en el enunciado, se actualizño que relaja los criterios de `cargar_datos`. En caso de tener todo correcto con la version anterior, esto se mantendrá en la version nueva.
