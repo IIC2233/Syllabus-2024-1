@@ -85,4 +85,6 @@ generadora) estarán prohibidas.
 
 5. Se actualizó el `test_20_votos_validos.py` para que no hayan id_voto repetidos. 
 
-5. Se actualizó `test_solution.py` para poder tener los resultados actualizados de los tests.
+6. Se actualizó `test_solution.py` para poder tener los resultados actualizados de los tests.
+
+7. Se actualizó `test_elementos_prohibidos.pyc` por un error detectado en la issue [448](https://github.com/IIC2233/Syllabus/issues/448). En caso de tener todo correcto con la version anterior, esto se mantendrá en la version nueva.
