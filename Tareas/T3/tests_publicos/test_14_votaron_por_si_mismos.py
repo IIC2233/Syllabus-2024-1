@@ -73,7 +73,7 @@ class TestVotaronPorSiMismos(unittest.TestCase):
 
         resultado_estudiante = votaron_por_si_mismos(generador_entregado1, generador_entregado2)
 
-        self.assertIsInstance(resultado_estudiante, Generator)
+        self.assertIsInstance(resultado_estudiante, (list, tuple, set, filter, map, Generator))
 
         lista_esperada = [
             'Phil'
@@ -140,7 +140,7 @@ class TestVotaronPorSiMismos(unittest.TestCase):
 
         resultado_estudiante = votaron_por_si_mismos(generador_entregado1, generador_entregado2)
 
-        self.assertIsInstance(resultado_estudiante, Generator)
+        self.assertIsInstance(resultado_estudiante, (list, tuple, set, filter, map, Generator))
 
         lista_esperada = [
             'Phil',
@@ -209,7 +209,7 @@ class TestVotaronPorSiMismos(unittest.TestCase):
 
         resultado_estudiante = votaron_por_si_mismos(generador_entregado1, generador_entregado2)
 
-        self.assertIsInstance(resultado_estudiante, Generator)
+        self.assertIsInstance(resultado_estudiante, (list, tuple, set, filter, map, Generator))
 
         lista_esperada = [
             'Marylyn'
@@ -277,7 +277,7 @@ class TestVotaronPorSiMismos(unittest.TestCase):
 
         resultado_estudiante = votaron_por_si_mismos(generador_entregado1, generador_entregado2)
 
-        self.assertIsInstance(resultado_estudiante, Generator)
+        self.assertIsInstance(resultado_estudiante, (list, tuple, set, filter, map, Generator))
 
         lista_esperada = [
             'Joetta',
@@ -347,7 +347,7 @@ class TestVotaronPorSiMismos(unittest.TestCase):
 
         resultado_estudiante = votaron_por_si_mismos(generador_entregado1, generador_entregado2)
 
-        self.assertIsInstance(resultado_estudiante, Generator)
+        self.assertIsInstance(resultado_estudiante, (list, tuple, set, filter, map, Generator))
 
         lista_esperada = [
         ]

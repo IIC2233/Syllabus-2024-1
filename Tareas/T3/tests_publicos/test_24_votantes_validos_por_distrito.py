@@ -1,7 +1,5 @@
 import sys
 import unittest
-import os
-import csv
 from collections import namedtuple
 from typing import Generator
 
@@ -10,9 +8,15 @@ from typing import Generator
 sys.path.append("..")
 
 from consultas import votantes_validos_por_distritos, cargar_datos
-from test_solution import VOTANTES_VALIDOS_POR_DISTRITOS_S, VOTANTES_VALIDOS_POR_DISTRITOS_M, VOTANTES_VALIDOS_POR_DISTRITOS_L
-
-
+from test_solution import (
+    VOTANTES_VALIDOS_POR_DISTRITOS_S,
+    VOTANTES_VALIDOS_POR_DISTRITOS_M,
+    VOTANTES_VALIDOS_POR_DISTRITOS_L,
+    VOTANTES_VALIDOS_POR_DISTRITOS_S_A,
+    VOTANTES_VALIDOS_POR_DISTRITOS_M_A,
+    VOTANTES_VALIDOS_POR_DISTRITOS_L_A,
+    
+)
 
 class TestVotantesValidosPorDistrito(unittest.TestCase):
 
@@ -40,7 +44,7 @@ class TestVotantesValidosPorDistrito(unittest.TestCase):
 
         lista_entregada1 = [
             Animal(1, "Gay", "Perro", 190, 288.0, 45, "1979/11"),
-            Animal(2, "Lexi", "Gato", 61, 0.071, 34, "1957/8"),
+            Animal(2, "Lexi", "Gato", 61, 0.071, 34, "1990/8"),
             Animal(3, "Toccara", "Gato", 248, 0.525, 67, "1957/12"),
             Animal(4, "Phil", "Perro", 248, 0.525, 67, "1957/12"),
             Animal(5, "Ernst", "Gato", 116, 81.0, 60, "1964/9"),
@@ -60,14 +64,14 @@ class TestVotantesValidosPorDistrito(unittest.TestCase):
 
         generador_entregado2 = (element for element in lista_entregada2)
 
-        Locales = namedtuple("Locales", "id_local, nombre, id_comuna, votantes")
+        Locales = namedtuple("Locales", "id_local, nombre_local, id_comuna, id_votantes")
 
         lista_entregada3 = [
-            Locales(id_local=0, nombre="Local 0", id_comuna=1, votantes=[1]),
-            Locales(id_local=1, nombre="Local 1", id_comuna=1, votantes=[2]),
-            Locales(id_local=2, nombre="Local 2", id_comuna=2, votantes=[3]),
-            Locales(id_local=3, nombre="Local 3", id_comuna=2, votantes=[4]),
-            Locales(id_local=4, nombre="Local 4", id_comuna=3, votantes=[5]),
+            Locales(id_local=0, nombre_local="Local 0", id_comuna=1, id_votantes=[1]),
+            Locales(id_local=1, nombre_local="Local 1", id_comuna=1, id_votantes=[2]),
+            Locales(id_local=2, nombre_local="Local 2", id_comuna=2, id_votantes=[3]),
+            Locales(id_local=3, nombre_local="Local 3", id_comuna=2, id_votantes=[4]),
+            Locales(id_local=4, nombre_local="Local 4", id_comuna=3, id_votantes=[5]),
         ]
 
         generador_entregado3 = (element for element in lista_entregada3)
@@ -100,18 +104,28 @@ class TestVotantesValidosPorDistrito(unittest.TestCase):
             generador_entregado5,
         )
 
-        self.assertIsInstance(resultado_estudiante, Generator)
+        self.assertIsInstance(resultado_estudiante, (list, tuple, set, filter, map, Generator))
 
-        lista_esperada = [
+        resultado_lista = [animal for animal in resultado_estudiante]
+
+        resultado_considerando_el_ano = [
             Animal(1, "Gay", "Perro", 190, 288.0, 45, "1979/11"),
-            Animal(2, "Lexi", "Gato", 61, 0.071, 34, "1957/8"),
+            Animal(2, "Lexi", "Gato", 61, 0.071, 34, "1990/8"),
+            Animal(3, "Toccara", "Gato", 248, 0.525, 67, "1957/12"),
+            Animal(4, "Phil", "Perro", 248, 0.525, 67, "1957/12"),
+        ]
+        resultado_considerando_la_edad = [
+            Animal(1, "Gay", "Perro", 190, 288.0, 45, "1979/11"),
+            Animal(2, "Lexi", "Gato", 61, 0.071, 34, "1990/8"),
             Animal(3, "Toccara", "Gato", 248, 0.525, 67, "1957/12"),
             Animal(4, "Phil", "Perro", 248, 0.525, 67, "1957/12"),
         ]
 
-        resultado_lista = [animal for animal in resultado_estudiante]
+        try:
+            self.assertCountEqual(resultado_lista, resultado_considerando_el_ano)
+        except AssertionError:
+            self.assertCountEqual(resultado_lista, resultado_considerando_la_edad)
 
-        self.assertCountEqual(resultado_lista, lista_esperada)
 
     def test_1(self):
         """
@@ -133,7 +147,7 @@ class TestVotantesValidosPorDistrito(unittest.TestCase):
 
         lista_entregada1 = [
             Animal(1, "Gay", "Perro", 190, 288.0, 45, "1979/11"),
-            Animal(2, "Lexi", "Perro", 61, 0.071, 34, "1957/8"),
+            Animal(2, "Lexi", "Perro", 61, 0.071, 34, "1990/8"),
             Animal(3, "Toccara", "Perro", 248, 0.525, 67, "1957/12"),
             Animal(4, "Phil", "Perro", 248, 0.525, 67, "1957/12"),
             Animal(5, "Ernst", "Gato", 116, 81.0, 60, "1964/9"),
@@ -153,14 +167,14 @@ class TestVotantesValidosPorDistrito(unittest.TestCase):
 
         generador_entregado2 = (element for element in lista_entregada2)
 
-        Locales = namedtuple("Locales", "id_local, nombre, id_comuna, votantes")
+        Locales = namedtuple("Locales", "id_local, nombre_local, id_comuna, id_votantes")
 
         lista_entregada3 = [
-            Locales(id_local=0, nombre="Local 0", id_comuna=1, votantes=[1]),
-            Locales(id_local=1, nombre="Local 1", id_comuna=1, votantes=[2]),
-            Locales(id_local=2, nombre="Local 2", id_comuna=2, votantes=[3]),
-            Locales(id_local=3, nombre="Local 3", id_comuna=2, votantes=[4]),
-            Locales(id_local=4, nombre="Local 4", id_comuna=3, votantes=[5]),
+            Locales(id_local=0, nombre_local="Local 0", id_comuna=1, id_votantes=[1]),
+            Locales(id_local=1, nombre_local="Local 1", id_comuna=1, id_votantes=[2]),
+            Locales(id_local=2, nombre_local="Local 2", id_comuna=2, id_votantes=[3]),
+            Locales(id_local=3, nombre_local="Local 3", id_comuna=2, id_votantes=[4]),
+            Locales(id_local=4, nombre_local="Local 4", id_comuna=3, id_votantes=[5]),
         ]
 
         generador_entregado3 = (element for element in lista_entregada3)
@@ -193,15 +207,21 @@ class TestVotantesValidosPorDistrito(unittest.TestCase):
             generador_entregado5,
         )
 
-        self.assertIsInstance(resultado_estudiante, Generator)
-
-        lista_esperada = [
-            Animal(5, "Ernst", "Gato", 116, 81.0, 60, "1964/9"),
-        ]
+        self.assertIsInstance(resultado_estudiante, (list, tuple, set, filter, map, Generator))
 
         resultado_lista = [animal for animal in resultado_estudiante]
 
-        self.assertCountEqual(resultado_lista, lista_esperada)
+        resultado_considerando_el_ano = [
+            Animal(5, "Ernst", "Gato", 116, 81.0, 60, "1964/9"),
+        ]
+        resultado_considerando_la_edad = [
+            Animal(5, "Ernst", "Gato", 116, 81.0, 60, "1964/9"),
+        ]
+
+        try:
+            self.assertCountEqual(resultado_lista, resultado_considerando_el_ano)
+        except AssertionError:
+            self.assertCountEqual(resultado_lista, resultado_considerando_la_edad)
 
     def test_2(self):
         """
@@ -223,7 +243,7 @@ class TestVotantesValidosPorDistrito(unittest.TestCase):
 
         lista_entregada1 = [
             Animal(1, "Gay", "Perro", 190, 288.0, 45, "1979/11"),
-            Animal(2, "Lexi", "Gato", 61, 0.071, 34, "1957/8"),
+            Animal(2, "Lexi", "Gato", 61, 0.071, 34, "1990/8"),
             Animal(3, "Toccara", "Gato", 248, 0.525, 67, "1957/12"),
             Animal(4, "Phil", "Perro", 248, 0.525, 67, "1957/12"),
             Animal(5, "Ernst", "Gato", 116, 81.0, 60, "1964/9"),
@@ -243,14 +263,14 @@ class TestVotantesValidosPorDistrito(unittest.TestCase):
 
         generador_entregado2 = (element for element in lista_entregada2)
 
-        Locales = namedtuple("Locales", "id_local, nombre, id_comuna, votantes")
+        Locales = namedtuple("Locales", "id_local, nombre_local, id_comuna, id_votantes")
 
         lista_entregada3 = [
-            Locales(id_local=0, nombre="Local 0", id_comuna=1, votantes=[1]),
-            Locales(id_local=1, nombre="Local 1", id_comuna=1, votantes=[2]),
-            Locales(id_local=2, nombre="Local 2", id_comuna=2, votantes=[3]),
-            Locales(id_local=3, nombre="Local 3", id_comuna=2, votantes=[4]),
-            Locales(id_local=4, nombre="Local 4", id_comuna=3, votantes=[5]),
+            Locales(id_local=0, nombre_local="Local 0", id_comuna=1, id_votantes=[1]),
+            Locales(id_local=1, nombre_local="Local 1", id_comuna=1, id_votantes=[2]),
+            Locales(id_local=2, nombre_local="Local 2", id_comuna=2, id_votantes=[3]),
+            Locales(id_local=3, nombre_local="Local 3", id_comuna=2, id_votantes=[4]),
+            Locales(id_local=4, nombre_local="Local 4", id_comuna=3, id_votantes=[5]),
         ]
 
         generador_entregado3 = (element for element in lista_entregada3)
@@ -283,18 +303,27 @@ class TestVotantesValidosPorDistrito(unittest.TestCase):
             generador_entregado5,
         )
 
-        self.assertIsInstance(resultado_estudiante, Generator)
+        self.assertIsInstance(resultado_estudiante, (list, tuple, set, filter, map, Generator))
 
-        lista_esperada = [
+        resultado_lista = [animal for animal in resultado_estudiante]
+
+        resultado_considerando_el_ano = [
             Animal(1, "Gay", "Perro", 190, 288.0, 45, "1979/11"),
-            Animal(2, "Lexi", "Gato", 61, 0.071, 34, "1957/8"),
+            Animal(2, "Lexi", "Gato", 61, 0.071, 34, "1990/8"),
+            Animal(3, "Toccara", "Gato", 248, 0.525, 67, "1957/12"),
+            Animal(4, "Phil", "Perro", 248, 0.525, 67, "1957/12"),
+        ]
+        resultado_considerando_la_edad = [
+            Animal(1, "Gay", "Perro", 190, 288.0, 45, "1979/11"),
+            Animal(2, "Lexi", "Gato", 61, 0.071, 34, "1990/8"),
             Animal(3, "Toccara", "Gato", 248, 0.525, 67, "1957/12"),
             Animal(4, "Phil", "Perro", 248, 0.525, 67, "1957/12"),
         ]
 
-        resultado_lista = [animal for animal in resultado_estudiante]
-
-        self.assertCountEqual(resultado_lista, lista_esperada)
+        try:
+            self.assertCountEqual(resultado_lista, resultado_considerando_el_ano)
+        except AssertionError:
+            self.assertCountEqual(resultado_lista, resultado_considerando_la_edad)
 
     def test_3(self):
         """
@@ -316,7 +345,7 @@ class TestVotantesValidosPorDistrito(unittest.TestCase):
 
         lista_entregada1 = [
             Animal(1, "Gay", "Gallina", 190, 288.0, 45, "1979/11"),
-            Animal(2, "Lexi", "Gato", 61, 0.071, 34, "1957/8"),
+            Animal(2, "Lexi", "Gato", 61, 0.071, 34, "1990/8"),
             Animal(3, "Toccara", "Gallina", 248, 0.525, 67, "1957/12"),
             Animal(4, "Phil", "Perro", 248, 0.525, 67, "1957/12"),
             Animal(5, "Ernst", "Gato", 116, 81.0, 60, "1964/9"),
@@ -336,14 +365,14 @@ class TestVotantesValidosPorDistrito(unittest.TestCase):
 
         generador_entregado2 = (element for element in lista_entregada2)
 
-        Locales = namedtuple("Locales", "id_local, nombre, id_comuna, votantes")
+        Locales = namedtuple("Locales", "id_local, nombre_local, id_comuna, id_votantes")
 
         lista_entregada3 = [
-            Locales(id_local=0, nombre="Local 0", id_comuna=1, votantes=[1]),
-            Locales(id_local=1, nombre="Local 1", id_comuna=1, votantes=[2]),
-            Locales(id_local=2, nombre="Local 2", id_comuna=2, votantes=[3]),
-            Locales(id_local=3, nombre="Local 3", id_comuna=3, votantes=[4]),
-            Locales(id_local=4, nombre="Local 4", id_comuna=3, votantes=[5]),
+            Locales(id_local=0, nombre_local="Local 0", id_comuna=1, id_votantes=[1]),
+            Locales(id_local=1, nombre_local="Local 1", id_comuna=1, id_votantes=[2]),
+            Locales(id_local=2, nombre_local="Local 2", id_comuna=2, id_votantes=[3]),
+            Locales(id_local=3, nombre_local="Local 3", id_comuna=3, id_votantes=[4]),
+            Locales(id_local=4, nombre_local="Local 4", id_comuna=3, id_votantes=[5]),
         ]
 
         generador_entregado3 = (element for element in lista_entregada3)
@@ -380,16 +409,23 @@ class TestVotantesValidosPorDistrito(unittest.TestCase):
             generador_entregado5,
         )
 
-        self.assertIsInstance(resultado_estudiante, Generator)
+        self.assertIsInstance(resultado_estudiante, (list, tuple, set, filter, map, Generator))
 
-        lista_esperada = [
+        resultado_lista = [animal for animal in resultado_estudiante]
+
+        resultado_considerando_el_ano = [
+            Animal(4, "Phil", "Perro", 248, 0.525, 67, "1957/12"),
+            Animal(5, "Ernst", "Gato", 116, 81.0, 60, "1964/9"),
+        ]
+        resultado_considerando_la_edad = [
             Animal(4, "Phil", "Perro", 248, 0.525, 67, "1957/12"),
             Animal(5, "Ernst", "Gato", 116, 81.0, 60, "1964/9"),
         ]
 
-        resultado_lista = [animal for animal in resultado_estudiante]
-
-        self.assertCountEqual(resultado_lista, lista_esperada)
+        try:
+            self.assertCountEqual(resultado_lista, resultado_considerando_el_ano)
+        except AssertionError:
+            self.assertCountEqual(resultado_lista, resultado_considerando_la_edad)
 
     def test_4(self):
         """
@@ -411,7 +447,7 @@ class TestVotantesValidosPorDistrito(unittest.TestCase):
 
         lista_entregada1 = [
             Animal(1, "Gay", "Gallina", 190, 288.0, 45, "1979/11"),
-            Animal(2, "Lexi", "Gato", 61, 0.071, 34, "1957/8"),
+            Animal(2, "Lexi", "Gato", 61, 0.071, 34, "1990/8"),
             Animal(3, "Toccara", "Perro", 248, 0.525, 67, "1957/12"),
             Animal(4, "Phil", "Perro", 248, 0.525, 67, "1957/12"),
             Animal(5, "Ernst", "Gato", 116, 81.0, 60, "1964/9"),
@@ -431,14 +467,14 @@ class TestVotantesValidosPorDistrito(unittest.TestCase):
 
         generador_entregado2 = (element for element in lista_entregada2)
 
-        Locales = namedtuple("Locales", "id_local, nombre, id_comuna, votantes")
+        Locales = namedtuple("Locales", "id_local, nombre_local, id_comuna, id_votantes")
 
         lista_entregada3 = [
-            Locales(id_local=0, nombre="Local 0", id_comuna=1, votantes=[1]),
-            Locales(id_local=1, nombre="Local 1", id_comuna=1, votantes=[2]),
-            Locales(id_local=2, nombre="Local 2", id_comuna=2, votantes=[3]),
-            Locales(id_local=3, nombre="Local 3", id_comuna=3, votantes=[4]),
-            Locales(id_local=4, nombre="Local 4", id_comuna=3, votantes=[5]),
+            Locales(id_local=0, nombre_local="Local 0", id_comuna=1, id_votantes=[1]),
+            Locales(id_local=1, nombre_local="Local 1", id_comuna=1, id_votantes=[2]),
+            Locales(id_local=2, nombre_local="Local 2", id_comuna=2, id_votantes=[3]),
+            Locales(id_local=3, nombre_local="Local 3", id_comuna=3, id_votantes=[4]),
+            Locales(id_local=4, nombre_local="Local 4", id_comuna=3, id_votantes=[5]),
         ]
 
         generador_entregado3 = (element for element in lista_entregada3)
@@ -475,34 +511,50 @@ class TestVotantesValidosPorDistrito(unittest.TestCase):
             generador_entregado5,
         )
 
-        self.assertIsInstance(resultado_estudiante, Generator)
-
-        lista_esperada = [
-            Animal(1, "Gay", "Gallina", 190, 288.0, 45, "1979/11"),
-            Animal(2, "Lexi", "Gato", 61, 0.071, 34, "1957/8"),
-            Animal(3, "Toccara", "Perro", 248, 0.525, 67, "1957/12"),
-        ]
+        self.assertIsInstance(resultado_estudiante, (list, tuple, set, filter, map, Generator))
 
         resultado_lista = [animal for animal in resultado_estudiante]
 
-        self.assertCountEqual(resultado_lista, lista_esperada)
+        resultado_considerando_el_ano = [
+            Animal(1, "Gay", "Gallina", 190, 288.0, 45, "1979/11"),
+            Animal(2, "Lexi", "Gato", 61, 0.071, 34, "1990/8"),
+            Animal(3, "Toccara", "Perro", 248, 0.525, 67, "1957/12"),
+        ]
+        resultado_considerando_la_edad = [
+            Animal(1, "Gay", "Gallina", 190, 288.0, 45, "1979/11"),
+            Animal(2, "Lexi", "Gato", 61, 0.071, 34, "1990/8"),
+            Animal(3, "Toccara", "Perro", 248, 0.525, 67, "1957/12"),
+        ]
+
+        try:
+            self.assertCountEqual(resultado_lista, resultado_considerando_el_ano)
+        except AssertionError:
+            self.assertCountEqual(resultado_lista, resultado_considerando_la_edad)
 
     def test_5(self):
         """
-         Verifica que se retorne los votantes cuando se manejan pequeños datos.
+        Verifica que se retorne los votantes cuando se manejan pequeños datos.
         """
         carpeta = "s"
         g_a = cargar_datos("animales", carpeta)
         g_d = cargar_datos("distritos", carpeta)
         g_l = cargar_datos("locales", carpeta)
         g_p = cargar_datos("ponderadores", carpeta)
-        g_v =  cargar_datos("votos", carpeta)
-        resultado = votantes_validos_por_distritos( g_a , g_d,  g_l , g_v, g_p)
-        expected_output = VOTANTES_VALIDOS_POR_DISTRITOS_S
+        g_v = cargar_datos("votos", carpeta)
+        resultado = votantes_validos_por_distritos(g_a, g_d, g_l, g_v, g_p)
+
+        resultado_considerando_la_edad = VOTANTES_VALIDOS_POR_DISTRITOS_S
+        resultado_considerando_el_ano = VOTANTES_VALIDOS_POR_DISTRITOS_S_A
         
         self.assertIsInstance(resultado, (list, tuple, set, filter, map, Generator))
-        self.assertCountEqual(list(resultado), expected_output)
-    
+
+        list_resultado = list(resultado)
+
+        try:
+            self.assertCountEqual(list_resultado, resultado_considerando_la_edad)
+        except AssertionError:
+            self.assertCountEqual(list_resultado, resultado_considerando_el_ano)
+
     def test_6(self):
         """
         Verifica que se retorne los votantes cuando se manejan medianos datos.
@@ -512,12 +564,20 @@ class TestVotantesValidosPorDistrito(unittest.TestCase):
         g_d = cargar_datos("distritos", carpeta)
         g_l = cargar_datos("locales", carpeta)
         g_p = cargar_datos("ponderadores", carpeta)
-        g_v =  cargar_datos("votos", carpeta)
-        resultado = votantes_validos_por_distritos( g_a , g_d,  g_l , g_v, g_p)
-        expected_output = VOTANTES_VALIDOS_POR_DISTRITOS_M
+        g_v = cargar_datos("votos", carpeta)
+        resultado = votantes_validos_por_distritos(g_a, g_d, g_l, g_v, g_p)
 
+        resultado_considerando_la_edad = VOTANTES_VALIDOS_POR_DISTRITOS_M
+        resultado_considerando_el_ano = VOTANTES_VALIDOS_POR_DISTRITOS_M_A
+        
         self.assertIsInstance(resultado, (list, tuple, set, filter, map, Generator))
-        self.assertCountEqual(list(resultado), expected_output)
+
+        list_resultado = list(resultado)
+
+        try:
+            self.assertCountEqual(list_resultado, resultado_considerando_la_edad)
+        except AssertionError:
+            self.assertCountEqual(list_resultado, resultado_considerando_el_ano)
 
     def test_7(self):
         """
@@ -528,13 +588,21 @@ class TestVotantesValidosPorDistrito(unittest.TestCase):
         g_d = cargar_datos("distritos", carpeta)
         g_l = cargar_datos("locales", carpeta)
         g_p = cargar_datos("ponderadores", carpeta)
-        g_v =  cargar_datos("votos", carpeta)
-        resultado = votantes_validos_por_distritos( g_a , g_d,  g_l , g_v, g_p)
-        expected_output = VOTANTES_VALIDOS_POR_DISTRITOS_L
+        g_v = cargar_datos("votos", carpeta)
+        resultado = votantes_validos_por_distritos(g_a, g_d, g_l, g_v, g_p)
+
+        resultado_considerando_la_edad = VOTANTES_VALIDOS_POR_DISTRITOS_L
+        resultado_considerando_el_ano = VOTANTES_VALIDOS_POR_DISTRITOS_L_A
         
         self.assertIsInstance(resultado, (list, tuple, set, filter, map, Generator))
-        self.assertCountEqual(list(resultado), expected_output)
+
+        list_resultado = list(resultado)
+
+        try:
+            self.assertCountEqual(list_resultado, resultado_considerando_la_edad)
+        except AssertionError:
+            self.assertCountEqual(list_resultado, resultado_considerando_el_ano)
+
 
 if __name__ == "__main__":
     unittest.main(verbosity=2)
-    

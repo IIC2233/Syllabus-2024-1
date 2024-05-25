@@ -8,7 +8,7 @@ from typing import Generator
 sys.path.append("..")
 
 from consultas import votos_alcalde_en_local, cargar_datos
-from test_solution import VOTOS_ALCALDE_EN_LOCAL_S, VOTOS_ALCALDE_EN_LOCAL_M, VOTOS_ALCALDE_EN_LOCAL_L
+from test_solution import VOTOS_ALCALDE_EN_LOCAL_S, VOTOS_ALCALDE_EN_LOCAL_M, VOTOS_ALCALDE_EN_LOCAL_L, VOTOS_ALCALDE_EN_LOCAL_S_2, VOTOS_ALCALDE_EN_LOCAL_M_2, VOTOS_ALCALDE_EN_LOCAL_L_2
 
 class TestVotosAlcaldeEnLocal(unittest.TestCase):
 
@@ -257,7 +257,20 @@ class TestVotosAlcaldeEnLocal(unittest.TestCase):
         expected_output = VOTOS_ALCALDE_EN_LOCAL_L
         
         self.assertIsInstance(resultado, (list, tuple, set, filter, map, Generator))
-        self.assertCountEqual(list(resultado), expected_output)       
+        self.assertCountEqual(list(resultado), expected_output)
+
+    def test_8(self):
+        """
+         Verifica que se retorne los votantes cuando se manejan pequeños datos.
+        """
+        carpeta = "s"
+        g_v = cargar_datos("votos", carpeta)
+        resultado = votos_alcalde_en_local(g_v,2055, 2)
+        expected_output = VOTOS_ALCALDE_EN_LOCAL_S_2
+        
+        self.assertIsInstance(resultado, (list, tuple, set, filter, map, Generator))
+        self.assertCountEqual(list(resultado), expected_output)
+     
 
 
 if __name__ == "__main__":

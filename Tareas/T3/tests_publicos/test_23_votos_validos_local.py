@@ -8,7 +8,7 @@ sys.path.append("..")
 
 from consultas import votos_validos_local, cargar_datos
 from utilidades import Animales, Votos, Ponderador
-from test_solution import VOTOS_VALIDOS_LOCAL_S, VOTOS_VALIDOS_LOCAL_M, VOTOS_VALIDOS_LOCAL_L
+from test_solution import VOTOS_VALIDOS_LOCAL_S, VOTOS_VALIDOS_LOCAL_M, VOTOS_VALIDOS_LOCAL_L, VOTOS_VALIDOS_LOCAL_S_A, VOTOS_VALIDOS_LOCAL_M_A, VOTOS_VALIDOS_LOCAL_L_A
 
 class TestVotosValidosLocal(unittest.TestCase):
 
@@ -58,15 +58,19 @@ class TestVotosValidosLocal(unittest.TestCase):
             Ponderador(especie= "Gato",        ponderador= 40),
         ]
 
-        expected_output = [1]
-
-
         generador_animales = (p for p in lista_animales)
         generador_votos = (p for p in lista_votos)
         generador_ponderadores = (p for p in lista_ponderadores)
         resultado = votos_validos_local(generador_animales, generador_votos, generador_ponderadores, 2)
         self.assertIsInstance(resultado, (list, tuple, set, filter, map, Generator))
-        self.assertCountEqual(list(resultado), expected_output)
+        list_resultado = list(resultado)
+        resultado_esperado_considerando_el_ano_de_nacimiento = [1]
+        resultado_esperado_considerando_la_edad = [1]
+
+        try:
+            self.assertCountEqual(list_resultado, resultado_esperado_considerando_el_ano_de_nacimiento)
+        except AssertionError:
+            self.assertCountEqual(list_resultado, resultado_esperado_considerando_la_edad)
 
     def test_1(self):
         """
@@ -110,15 +114,19 @@ class TestVotosValidosLocal(unittest.TestCase):
             Ponderador(especie= "Gato",        ponderador= 40),
         ]
 
-        expected_output = [3,4,5]
-
-
         generador_animales = (p for p in lista_animales)
         generador_votos = (p for p in lista_votos)
         generador_ponderadores = (p for p in lista_ponderadores)
         resultado = votos_validos_local(generador_animales, generador_votos, generador_ponderadores, 5)
         self.assertIsInstance(resultado, (list, tuple, set, filter, map, Generator))
-        self.assertCountEqual(list(resultado), expected_output)
+        list_resultado = list(resultado)
+        resultado_esperado_considerando_el_ano_de_nacimiento = [3,4,5]
+        resultado_esperado_considerando_la_edad = [3,4,5]
+
+        try:
+            self.assertCountEqual(list_resultado, resultado_esperado_considerando_el_ano_de_nacimiento)
+        except AssertionError:
+            self.assertCountEqual(list_resultado, resultado_esperado_considerando_la_edad)
 
     def test_2(self):
         """
@@ -162,15 +170,20 @@ class TestVotosValidosLocal(unittest.TestCase):
             Ponderador(especie= "Gato",        ponderador= 40),
         ]
 
-        expected_output = [4,5,9]
-
-
         generador_animales = (p for p in lista_animales)
         generador_votos = (p for p in lista_votos)
         generador_ponderadores = (p for p in lista_ponderadores)
         resultado = votos_validos_local(generador_animales, generador_votos, generador_ponderadores, 7)
         self.assertIsInstance(resultado, (list, tuple, set, filter, map, Generator))
-        self.assertCountEqual(list(resultado), expected_output)
+        list_resultado = list(resultado)
+        resultado_esperado_considerando_el_ano_de_nacimiento = [4,5,9]
+        resultado_esperado_considerando_la_edad = [4,5,9]
+
+        try:
+            self.assertCountEqual(list_resultado, resultado_esperado_considerando_el_ano_de_nacimiento)
+        except AssertionError:
+            self.assertCountEqual(list_resultado, resultado_esperado_considerando_la_edad)
+
         
     def test_3(self):
         """
@@ -214,15 +227,20 @@ class TestVotosValidosLocal(unittest.TestCase):
             Ponderador(especie= "Gato",        ponderador= 40),
         ]
 
-        expected_output = []
-
-
         generador_animales = (p for p in lista_animales)
         generador_votos = (p for p in lista_votos)
         generador_ponderadores = (p for p in lista_ponderadores)
         resultado = votos_validos_local(generador_animales, generador_votos, generador_ponderadores, 9)
         self.assertIsInstance(resultado, (list, tuple, set, filter, map, Generator))
-        self.assertCountEqual(list(resultado), expected_output)
+        list_resultado = list(resultado)
+        resultado_esperado_considerando_el_ano_de_nacimiento = []
+        resultado_esperado_considerando_la_edad = []
+
+        try:
+            self.assertCountEqual(list_resultado, resultado_esperado_considerando_el_ano_de_nacimiento)
+        except AssertionError:
+            self.assertCountEqual(list_resultado, resultado_esperado_considerando_la_edad)
+
 
     def test_4(self):
         """
@@ -266,15 +284,19 @@ class TestVotosValidosLocal(unittest.TestCase):
             Ponderador(especie= "Gato",        ponderador= 40),
         ]
 
-        expected_output = []
-
-
         generador_animales = (p for p in lista_animales)
         generador_votos = (p for p in lista_votos)
         generador_ponderadores = (p for p in lista_ponderadores)
         resultado = votos_validos_local(generador_animales, generador_votos, generador_ponderadores, 13)
         self.assertIsInstance(resultado, (list, tuple, set, filter, map, Generator))
-        self.assertCountEqual(list(resultado), expected_output)
+        list_resultado = list(resultado)
+        resultado_esperado_considerando_el_ano_de_nacimiento = []
+        resultado_esperado_considerando_la_edad = []
+
+        try:
+            self.assertCountEqual(list_resultado, resultado_esperado_considerando_el_ano_de_nacimiento)
+        except AssertionError:
+            self.assertCountEqual(list_resultado, resultado_esperado_considerando_la_edad)
 
     def test_5(self):
         """
@@ -285,10 +307,18 @@ class TestVotosValidosLocal(unittest.TestCase):
         g_p = cargar_datos("ponderadores", carpeta)
         g_v =  cargar_datos("votos", carpeta)
         resultado = votos_validos_local(g_a, g_v, g_p, 6)
-        expected_output = VOTOS_VALIDOS_LOCAL_S
+        
+        resultado_esperado_considerando_el_ano_de_nacimiento = VOTOS_VALIDOS_LOCAL_S
+        resultado_esperado_considerando_la_edad = VOTOS_VALIDOS_LOCAL_S_A
         
         self.assertIsInstance(resultado, (list, tuple, set, filter, map, Generator))
-        self.assertCountEqual(list(resultado), expected_output)
+
+        list_resultado = list(resultado)
+
+        try:
+            self.assertCountEqual(list_resultado, resultado_esperado_considerando_el_ano_de_nacimiento)
+        except AssertionError:
+            self.assertCountEqual(list_resultado, resultado_esperado_considerando_la_edad)
     
     def test_6(self):
         """
@@ -299,10 +329,18 @@ class TestVotosValidosLocal(unittest.TestCase):
         g_p = cargar_datos("ponderadores", carpeta)
         g_v =  cargar_datos("votos", carpeta)
         resultado = votos_validos_local(g_a, g_v, g_p, 6)
-        expected_output = VOTOS_VALIDOS_LOCAL_M
-
+        
+        resultado_esperado_considerando_el_ano_de_nacimiento = VOTOS_VALIDOS_LOCAL_M
+        resultado_esperado_considerando_la_edad = VOTOS_VALIDOS_LOCAL_M_A
+        
         self.assertIsInstance(resultado, (list, tuple, set, filter, map, Generator))
-        self.assertCountEqual(list(resultado), expected_output)
+
+        list_resultado = list(resultado)
+
+        try:
+            self.assertCountEqual(list_resultado, resultado_esperado_considerando_el_ano_de_nacimiento)
+        except AssertionError:
+            self.assertCountEqual(list_resultado, resultado_esperado_considerando_la_edad)
 
     def test_7(self):
         """
@@ -313,10 +351,18 @@ class TestVotosValidosLocal(unittest.TestCase):
         g_p = cargar_datos("ponderadores", carpeta)
         g_v =  cargar_datos("votos", carpeta)
         resultado = votos_validos_local(g_a, g_v, g_p, 6)
-        expected_output = VOTOS_VALIDOS_LOCAL_L
+        
+        resultado_esperado_considerando_el_ano_de_nacimiento = VOTOS_VALIDOS_LOCAL_L
+        resultado_esperado_considerando_la_edad = VOTOS_VALIDOS_LOCAL_L_A
         
         self.assertIsInstance(resultado, (list, tuple, set, filter, map, Generator))
-        self.assertCountEqual(list(resultado), expected_output)
+
+        list_resultado = list(resultado)
+
+        try:
+            self.assertCountEqual(list_resultado, resultado_esperado_considerando_el_ano_de_nacimiento)
+        except AssertionError:
+            self.assertCountEqual(list_resultado, resultado_esperado_considerando_la_edad)
 
 
 if __name__ == "__main__":

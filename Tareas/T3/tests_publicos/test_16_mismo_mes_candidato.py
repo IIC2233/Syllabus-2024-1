@@ -8,7 +8,7 @@ from typing import Generator
 sys.path.append("..")
 
 from consultas import mismo_mes_candidato, cargar_datos
-from test_solution import MISMO_MES_CANDIDATO_S, MISMO_MES_CANDIDATO_M, MISMO_MES_CANDIDATO_L
+from test_solution import MISMO_MES_CANDIDATO_S, MISMO_MES_CANDIDATO_M, MISMO_MES_CANDIDATO_L, MISMO_MES_CANDIDATO_S_2, MISMO_MES_CANDIDATO_M_2, MISMO_MES_CANDIDATO_L_2
 
 class TestMismoMesCandidato(unittest.TestCase):
 
@@ -455,6 +455,22 @@ class TestMismoMesCandidato(unittest.TestCase):
         
         self.assertIsInstance(resultado, (list, tuple, set, filter, map, Generator))
         self.assertCountEqual(list(resultado), expected_output)
+    
+    def test_8(self):
+        """
+         Verifica que se retorne los votantes cuando se manejan pequeños datos.
+        """
+        carpeta = "s"
+        g_a = cargar_datos("animales", carpeta)
+        g_c = cargar_datos("candidatos", carpeta)
+        g_v =  cargar_datos("votos", carpeta)
+        resultado = mismo_mes_candidato(g_a,  g_c, g_v, 2633)
+        expected_output = MISMO_MES_CANDIDATO_S_2
+        
+        self.assertIsInstance(resultado, (list, tuple, set, filter, map, Generator))
+        self.assertCountEqual(list(resultado), expected_output)
+
+
 
 
 if __name__ == "__main__":

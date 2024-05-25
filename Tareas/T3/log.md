@@ -72,3 +72,17 @@ generadora) estarán prohibidas.
 > 23-05-2024
   
 1. Se actualizó `test_elementos_prohibidos.pyc` por un error detectado en la issue [421](https://github.com/IIC2233/Syllabus/issues/421). Además, la version publicada del script era más estricta de lo indicado en el enunciado, se actualizño que relaja los criterios de `cargar_datos`. En caso de tener todo correcto con la version anterior, esto se mantendrá en la version nueva.
+
+> 25-05-2024
+
+1. Se agregaron nuevos test en los archivos `test_01_animales_que_votaron_por.py`, `test_06_votos_alcalde_en_local.py` y `test_16_mismo_mes_candidato.py` que **no contradice el enunciado**, pero es para que tengan un caso más para probar por consulta.
+
+2. Se actualizaron los test `test_10_animal_mas_viejo_edad_humana.py`, `test_20_votos_validos.py`, `test_23_votos_validos_local.py` y `test_24_votantes_validos_por_distrito.py` para que la edad calculada se permita tanto por animal.edad como por 2024-año_nacimiento.
+
+3. Se actualizó `test_14_votaron_por_si_mismos.py` se arregló para que el tipo de dato que retorne la consulta no sea únicamente un Generador, sino tambien aceptar, map, filter, etc.
+
+4. Se actualizó `test_10_animal_mas_viejo_edad_humana.py` se arregló para que el tipo de dato que retorne la consulta no sea únicamente un Generador, sino tambien aceptar, map, filter, etc. Se arreglaron los atributos incorrectos de Local().
+
+5. Se actualizó el `test_20_votos_validos.py` para que no hayan id_voto repetidos. 
+
+5. Se actualizó `test_solution.py` para poder tener los resultados actualizados de los tests.

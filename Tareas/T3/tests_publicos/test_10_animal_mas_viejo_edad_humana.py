@@ -1,7 +1,5 @@
 import sys
 import unittest
-import os
-import csv
 from collections import namedtuple
 from typing import Generator
 
@@ -10,7 +8,7 @@ from typing import Generator
 sys.path.append("..")
 
 from consultas import animal_mas_viejo_edad_humana, cargar_datos
-from test_solution import ANIMAL_MAS_VIEJO_EDAD_HUMANA_S, ANIMAL_MAS_VIEJO_EDAD_HUMANA_M, ANIMAL_MAS_VIEJO_EDAD_HUMANA_L
+from test_solution import ANIMAL_MAS_VIEJO_EDAD_HUMANA_S, ANIMAL_MAS_VIEJO_EDAD_HUMANA_M, ANIMAL_MAS_VIEJO_EDAD_HUMANA_L, ANIMAL_MAS_VIEJO_EDAD_HUMANA_S_A, ANIMAL_MAS_VIEJO_EDAD_HUMANA_M_A, ANIMAL_MAS_VIEJO_EDAD_HUMANA_L_A
 
 
 class TestAnimalMasViejoEdadHumana(unittest.TestCase):
@@ -27,11 +25,11 @@ class TestAnimalMasViejoEdadHumana(unittest.TestCase):
         Registro = namedtuple('Registro', ['id', 'nombre', 'especie', 'id_comuna', 'peso_kg', 'edad', 'fecha_nacimiento'])
 
         lista_entregada1 = [
-            Registro(id=93, nombre="Gay", especie="Tortuga", id_comuna=190, peso_kg=288.0, edad=1, fecha_nacimiento="1979/7"),
-            Registro(id=94, nombre="Lexi", especie="Perro", id_comuna=61, peso_kg=0.071, edad=1, fecha_nacimiento="1990/8"),
-            Registro(id=95, nombre="Ernst", especie="Gato", id_comuna=116, peso_kg=81.0, edad=1, fecha_nacimiento="1964/9"),
-            Registro(id=96, nombre="Shreya", especie="Conejo", id_comuna=292, peso_kg=7.8, edad=1, fecha_nacimiento="1992/2"),
-            Registro(id=97, nombre="Johanna", especie="Canario", id_comuna=248, peso_kg=0.525, edad=1, fecha_nacimiento="1957/12")
+            Registro(id=93, nombre="Gay", especie="Tortuga", id_comuna=190, peso_kg=288.0, edad=1, fecha_nacimiento="2023/7"),
+            Registro(id=94, nombre="Lexi", especie="Perro", id_comuna=61, peso_kg=0.071, edad=1, fecha_nacimiento="2023/8"),
+            Registro(id=95, nombre="Ernst", especie="Gato", id_comuna=116, peso_kg=81.0, edad=1, fecha_nacimiento="2023/9"),
+            Registro(id=96, nombre="Shreya", especie="Conejo", id_comuna=292, peso_kg=7.8, edad=1, fecha_nacimiento="2023/12"),
+            Registro(id=97, nombre="Johanna", especie="Canario", id_comuna=248, peso_kg=0.525, edad=1, fecha_nacimiento="2023/12")
         ]
 
         generador_entregado1 = (element for element in lista_entregada1)
@@ -56,15 +54,22 @@ class TestAnimalMasViejoEdadHumana(unittest.TestCase):
 
         resultado_estudiante = animal_mas_viejo_edad_humana(generador_entregado1, generador_entregado2)
 
-        self.assertIsInstance(resultado_estudiante, Generator)
-
-        lista_esperada = [
-            "Johanna"
-        ]
+        self.assertIsInstance(resultado_estudiante, (list, tuple, set, filter, map, Generator))
 
         resultado_lista = [nombre for nombre in resultado_estudiante]
 
-        self.assertCountEqual(resultado_lista, lista_esperada)
+        resultado_considerando_el_ano = [
+            "Johanna"
+        ]
+        resultado_considerando_la_edad = [
+            "Johanna"
+        ]
+
+        try:
+            self.assertCountEqual(resultado_lista, resultado_considerando_el_ano)
+        except AssertionError:
+            self.assertCountEqual(resultado_lista, resultado_considerando_la_edad)
+
  
     def test_1(self):
         """
@@ -74,11 +79,11 @@ class TestAnimalMasViejoEdadHumana(unittest.TestCase):
         Registro = namedtuple('Registro', ['id', 'nombre', 'especie', 'id_comuna', 'peso_kg', 'edad', 'fecha_nacimiento'])
 
         lista_entregada1 = [
-            Registro(id=93, nombre="Gay", especie="Tortuga", id_comuna=190, peso_kg=288.0, edad=10, fecha_nacimiento="1979/7"),
-            Registro(id=94, nombre="Lexi", especie="Perro", id_comuna=61, peso_kg=0.071, edad=17, fecha_nacimiento="1990/8"),
-            Registro(id=95, nombre="Ernst", especie="Gato", id_comuna=116, peso_kg=81.0, edad=5, fecha_nacimiento="1964/9"),
-            Registro(id=96, nombre="Shreya", especie="Conejo", id_comuna=292, peso_kg=7.8, edad=12, fecha_nacimiento="1992/2"),
-            Registro(id=97, nombre="Johanna", especie="Rata", id_comuna=248, peso_kg=0.525, edad=40, fecha_nacimiento="1957/12")
+            Registro(id=93, nombre="Gay", especie="Tortuga", id_comuna=190, peso_kg=288.0, edad=10, fecha_nacimiento="2014/7"),
+            Registro(id=94, nombre="Lexi", especie="Perro", id_comuna=61, peso_kg=0.071, edad=17, fecha_nacimiento="2007/8"),
+            Registro(id=95, nombre="Ernst", especie="Gato", id_comuna=116, peso_kg=81.0, edad=5, fecha_nacimiento="2019/9"),
+            Registro(id=96, nombre="Shreya", especie="Conejo", id_comuna=292, peso_kg=7.8, edad=12, fecha_nacimiento="2012/2"),
+            Registro(id=97, nombre="Johanna", especie="Rata", id_comuna=248, peso_kg=0.525, edad=40, fecha_nacimiento="1984/12")
         ]
 
         generador_entregado1 = (element for element in lista_entregada1)
@@ -103,15 +108,21 @@ class TestAnimalMasViejoEdadHumana(unittest.TestCase):
 
         resultado_estudiante = animal_mas_viejo_edad_humana(generador_entregado1, generador_entregado2)
 
-        self.assertIsInstance(resultado_estudiante, Generator)
-
-        lista_esperada = [
-            "Johanna"
-        ]
+        self.assertIsInstance(resultado_estudiante, (list, tuple, set, filter, map, Generator))
 
         resultado_lista = [nombre for nombre in resultado_estudiante]
 
-        self.assertCountEqual(resultado_lista, lista_esperada)
+        resultado_considerando_el_ano = [
+            "Johanna"
+        ]
+        resultado_considerando_la_edad = [
+            "Johanna"
+        ]
+
+        try:
+            self.assertCountEqual(resultado_lista, resultado_considerando_el_ano)
+        except AssertionError:
+            self.assertCountEqual(resultado_lista, resultado_considerando_la_edad)
 
     def test_2(self):
         """
@@ -121,11 +132,11 @@ class TestAnimalMasViejoEdadHumana(unittest.TestCase):
         Registro = namedtuple('Registro', ['id', 'nombre', 'especie', 'id_comuna', 'peso_kg', 'edad', 'fecha_nacimiento'])
 
         lista_entregada1 = [
-            Registro(id=93, nombre="Gay", especie="Tortuga", id_comuna=190, peso_kg=288.0, edad=10, fecha_nacimiento="1979/7"),
-            Registro(id=94, nombre="Lexi", especie="Perro", id_comuna=61, peso_kg=0.071, edad=17, fecha_nacimiento="1990/8"),
-            Registro(id=95, nombre="Ernst", especie="Gato", id_comuna=116, peso_kg=81.0, edad=5, fecha_nacimiento="1964/9"),
-            Registro(id=96, nombre="Shreya", especie="Conejo", id_comuna=292, peso_kg=7.8, edad=12, fecha_nacimiento="1992/2"),
-            Registro(id=97, nombre="Johanna", especie="Rata", id_comuna=248, peso_kg=0.525, edad=0, fecha_nacimiento="1957/12")
+            Registro(id=93, nombre="Gay", especie="Tortuga", id_comuna=190, peso_kg=288.0, edad=10, fecha_nacimiento="2014/7"),
+            Registro(id=94, nombre="Lexi", especie="Perro", id_comuna=61, peso_kg=0.071, edad=17, fecha_nacimiento="2007/8"),
+            Registro(id=95, nombre="Ernst", especie="Gato", id_comuna=116, peso_kg=81.0, edad=5, fecha_nacimiento="2019/9"),
+            Registro(id=96, nombre="Shreya", especie="Conejo", id_comuna=292, peso_kg=7.8, edad=12, fecha_nacimiento="2012/2"),
+            Registro(id=97, nombre="Johanna", especie="Rata", id_comuna=248, peso_kg=0.525, edad=0, fecha_nacimiento="2024/12")
         ]
 
         generador_entregado1 = (element for element in lista_entregada1)
@@ -150,15 +161,21 @@ class TestAnimalMasViejoEdadHumana(unittest.TestCase):
 
         resultado_estudiante = animal_mas_viejo_edad_humana(generador_entregado1, generador_entregado2)
 
-        self.assertIsInstance(resultado_estudiante, Generator)
-
-        lista_esperada = [
-            "Gay"
-        ]
+        self.assertIsInstance(resultado_estudiante, (list, tuple, set, filter, map, Generator))
 
         resultado_lista = [nombre for nombre in resultado_estudiante]
 
-        self.assertCountEqual(resultado_lista, lista_esperada)
+        resultado_considerando_el_ano = [
+            "Gay"
+        ]
+        resultado_considerando_la_edad = [
+            "Gay"
+        ]
+
+        try:
+            self.assertCountEqual(resultado_lista, resultado_considerando_el_ano)
+        except AssertionError:
+            self.assertCountEqual(resultado_lista, resultado_considerando_la_edad)
 
     def test_3(self):
         """
@@ -168,11 +185,11 @@ class TestAnimalMasViejoEdadHumana(unittest.TestCase):
         Registro = namedtuple('Registro', ['id', 'nombre', 'especie', 'id_comuna', 'peso_kg', 'edad', 'fecha_nacimiento'])
 
         lista_entregada1 = [
-            Registro(id=93, nombre="Gay", especie="Tortuga", id_comuna=190, peso_kg=288.0, edad=10, fecha_nacimiento="1979/7"),
-            Registro(id=94, nombre="Lexi", especie="Gato", id_comuna=61, peso_kg=0.071, edad=25, fecha_nacimiento="1990/8"),
-            Registro(id=95, nombre="Ernst", especie="Gato", id_comuna=116, peso_kg=81.0, edad=5, fecha_nacimiento="1964/9"),
-            Registro(id=96, nombre="Shreya", especie="Conejo", id_comuna=292, peso_kg=7.8, edad=12, fecha_nacimiento="1992/2"),
-            Registro(id=97, nombre="Johanna", especie="Rata", id_comuna=248, peso_kg=0.525, edad=0, fecha_nacimiento="1957/12")
+            Registro(id=93, nombre="Gay", especie="Tortuga", id_comuna=190, peso_kg=288.0, edad=10, fecha_nacimiento="2014/7"),
+            Registro(id=94, nombre="Lexi", especie="Gato", id_comuna=61, peso_kg=0.071, edad=25, fecha_nacimiento="1999/8"),
+            Registro(id=95, nombre="Ernst", especie="Gato", id_comuna=116, peso_kg=81.0, edad=5, fecha_nacimiento="2019/9"),
+            Registro(id=96, nombre="Shreya", especie="Conejo", id_comuna=292, peso_kg=7.8, edad=12, fecha_nacimiento="2012/2"),
+            Registro(id=97, nombre="Johanna", especie="Rata", id_comuna=248, peso_kg=0.525, edad=0, fecha_nacimiento="2024/12")
         ]
 
         generador_entregado1 = (element for element in lista_entregada1)
@@ -197,16 +214,23 @@ class TestAnimalMasViejoEdadHumana(unittest.TestCase):
 
         resultado_estudiante = animal_mas_viejo_edad_humana(generador_entregado1, generador_entregado2)
 
-        self.assertIsInstance(resultado_estudiante, Generator)
+        self.assertIsInstance(resultado_estudiante, (list, tuple, set, filter, map, Generator))
 
-        lista_esperada = [
+        resultado_lista = [nombre for nombre in resultado_estudiante]
+
+        resultado_considerando_el_ano = [
+            "Gay",
+            "Lexi"
+        ]
+        resultado_considerando_la_edad = [
             "Gay",
             "Lexi"
         ]
 
-        resultado_lista = [nombre for nombre in resultado_estudiante]
-
-        self.assertCountEqual(resultado_lista, lista_esperada)
+        try:
+            self.assertCountEqual(resultado_lista, resultado_considerando_el_ano)
+        except AssertionError:
+            self.assertCountEqual(resultado_lista, resultado_considerando_la_edad)
 
     def test_4(self):
         """
@@ -216,11 +240,11 @@ class TestAnimalMasViejoEdadHumana(unittest.TestCase):
         Registro = namedtuple('Registro', ['id', 'nombre', 'especie', 'id_comuna', 'peso_kg', 'edad', 'fecha_nacimiento'])
 
         lista_entregada1 = [
-            Registro(id=93, nombre="Gay", especie="Tortuga", id_comuna=190, peso_kg=288.0, edad=10, fecha_nacimiento="1979/7"),
-            Registro(id=94, nombre="Lexi", especie="Gato", id_comuna=61, peso_kg=0.071, edad=25, fecha_nacimiento="1990/8"),
-            Registro(id=95, nombre="Ernst", especie="Perro", id_comuna=116, peso_kg=81.0, edad=5, fecha_nacimiento="1964/9"),
-            Registro(id=96, nombre="Shreya", especie="Conejo", id_comuna=292, peso_kg=7.8, edad=12, fecha_nacimiento="1992/2"),
-            Registro(id=97, nombre="Johanna", especie="Tortuga", id_comuna=248, peso_kg=0.525, edad=10, fecha_nacimiento="1957/12")
+            Registro(id=93, nombre="Gay", especie="Tortuga", id_comuna=190, peso_kg=288.0, edad=10, fecha_nacimiento="2014/7"),
+            Registro(id=94, nombre="Lexi", especie="Gato", id_comuna=61, peso_kg=0.071, edad=25, fecha_nacimiento="1999/8"),
+            Registro(id=95, nombre="Ernst", especie="Perro", id_comuna=116, peso_kg=81.0, edad=5, fecha_nacimiento="2019/9"),
+            Registro(id=96, nombre="Shreya", especie="Conejo", id_comuna=292, peso_kg=7.8, edad=12, fecha_nacimiento="2012/2"),
+            Registro(id=97, nombre="Johanna", especie="Tortuga", id_comuna=248, peso_kg=0.525, edad=10, fecha_nacimiento="2014/12")
         ]
 
         generador_entregado1 = (element for element in lista_entregada1)
@@ -245,17 +269,25 @@ class TestAnimalMasViejoEdadHumana(unittest.TestCase):
 
         resultado_estudiante = animal_mas_viejo_edad_humana(generador_entregado1, generador_entregado2)
 
-        self.assertIsInstance(resultado_estudiante, Generator)
+        self.assertIsInstance(resultado_estudiante, (list, tuple, set, filter, map, Generator))
 
-        lista_esperada = [
+        resultado_lista = [nombre for nombre in resultado_estudiante]
+
+        resultado_considerando_el_ano = [
+            "Gay",
+            "Lexi",
+            "Johanna"
+        ]
+        resultado_considerando_la_edad = [
             "Gay",
             "Lexi",
             "Johanna"
         ]
 
-        resultado_lista = [nombre for nombre in resultado_estudiante]
-
-        self.assertCountEqual(resultado_lista, lista_esperada)
+        try:
+            self.assertCountEqual(resultado_lista, resultado_considerando_el_ano)
+        except AssertionError:
+            self.assertCountEqual(resultado_lista, resultado_considerando_la_edad)
 
     def test_5(self):
         """
@@ -265,10 +297,17 @@ class TestAnimalMasViejoEdadHumana(unittest.TestCase):
         g_a = cargar_datos("animales", carpeta)
         g_p =  cargar_datos("ponderadores", carpeta)
         resultado = animal_mas_viejo_edad_humana(g_a, g_p)
-        expected_output = ANIMAL_MAS_VIEJO_EDAD_HUMANA_S
+        resultado_considerando_la_edad = ANIMAL_MAS_VIEJO_EDAD_HUMANA_S
+        resultado_considerando_el_ano = ANIMAL_MAS_VIEJO_EDAD_HUMANA_S_A
         
         self.assertIsInstance(resultado, (list, tuple, set, filter, map, Generator))
-        self.assertCountEqual(list(resultado), expected_output)
+
+        list_resultado = list(resultado)
+
+        try:
+            self.assertCountEqual(list_resultado, resultado_considerando_el_ano)
+        except AssertionError:
+            self.assertCountEqual(list_resultado, resultado_considerando_la_edad)
     
     def test_6(self):
         """
@@ -278,10 +317,16 @@ class TestAnimalMasViejoEdadHumana(unittest.TestCase):
         g_a = cargar_datos("animales", carpeta)
         g_p =  cargar_datos("ponderadores", carpeta)
         resultado = animal_mas_viejo_edad_humana(g_a, g_p)
-        expected_output = ANIMAL_MAS_VIEJO_EDAD_HUMANA_M
+        resultado_considerando_la_edad = ANIMAL_MAS_VIEJO_EDAD_HUMANA_M
+        resultado_considerando_el_ano = ANIMAL_MAS_VIEJO_EDAD_HUMANA_M_A
 
-        self.assertIsInstance(resultado, (list, tuple, set, filter, map, Generator))
-        self.assertCountEqual(list(resultado), expected_output)
+        self.assertIsInstance(resultado, (list, tuple, set, filter, map, Generator))  
+        list_resultado = list(resultado)
+
+        try:
+            self.assertCountEqual(list_resultado, resultado_considerando_la_edad)
+        except AssertionError:
+            self.assertCountEqual(list_resultado, resultado_considerando_el_ano)
 
     def test_7(self):
         """
@@ -291,10 +336,17 @@ class TestAnimalMasViejoEdadHumana(unittest.TestCase):
         g_a = cargar_datos("animales", carpeta)
         g_p =  cargar_datos("ponderadores", carpeta)
         resultado = animal_mas_viejo_edad_humana(g_a, g_p)
-        expected_output = ANIMAL_MAS_VIEJO_EDAD_HUMANA_L
+        resultado_considerando_la_edad = ANIMAL_MAS_VIEJO_EDAD_HUMANA_L
+        resultado_considerando_el_ano = ANIMAL_MAS_VIEJO_EDAD_HUMANA_L_A
         
         self.assertIsInstance(resultado, (list, tuple, set, filter, map, Generator))
-        self.assertCountEqual(list(resultado), expected_output)  
+
+        list_resultado = list(resultado)
+
+        try:
+            self.assertCountEqual(list_resultado, resultado_considerando_la_edad)
+        except AssertionError:
+            self.assertCountEqual(list_resultado, resultado_considerando_el_ano)
 
 
 if __name__ == "__main__":

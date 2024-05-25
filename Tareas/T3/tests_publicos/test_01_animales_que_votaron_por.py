@@ -8,7 +8,7 @@ sys.path.append("..")
 
 from consultas import animales_que_votaron_por, cargar_datos
 from utilidades import Votos
-from test_solution import ANIMALES_QUE_VOTARON_POR_S, ANIMALES_QUE_VOTARON_POR_M, ANIMALES_QUE_VOTARON_POR_L
+from test_solution import ANIMALES_QUE_VOTARON_POR_S, ANIMALES_QUE_VOTARON_POR_M, ANIMALES_QUE_VOTARON_POR_L, ANIMALES_QUE_VOTARON_POR_S_2, ANIMALES_QUE_VOTARON_POR_M_2, ANIMALES_QUE_VOTARON_POR_L_2
 
 
 class TestAnimalesQueVotaronPor(unittest.TestCase):
@@ -136,7 +136,7 @@ class TestAnimalesQueVotaronPor(unittest.TestCase):
 
     def test_5(self):
         """
-         Verifica que se retorne los votantes cuando se manejan pequeños datos.
+         Verifica que se retorne los votantes cuando se manejan pequeños datos. (Retorna generador vacío)
         """
         carpeta = "s"
         generador_voto = cargar_datos("votos", carpeta)
@@ -148,7 +148,7 @@ class TestAnimalesQueVotaronPor(unittest.TestCase):
     
     def test_6(self):
         """
-        Verifica que se retorne los votantes cuando se manejan medianos datos.
+        Verifica que se retorne los votantes cuando se manejan medianos datos. (Retorna generador vacío)
         """
         carpeta = "m"
         generador_voto = cargar_datos("votos", carpeta)
@@ -160,7 +160,7 @@ class TestAnimalesQueVotaronPor(unittest.TestCase):
 
     def test_7(self):
         """
-        Verifica que se retorne los votantes cuando se manejan grandes datos.
+        Verifica que se retorne los votantes cuando se manejan grandes datos. (Retorna generador vacío)
         """
         carpeta = "l"
         generador_voto = cargar_datos("votos", carpeta)
@@ -169,6 +169,19 @@ class TestAnimalesQueVotaronPor(unittest.TestCase):
         
         self.assertIsInstance(resultado, (list, tuple, set, filter, map, Generator))
         self.assertCountEqual(list(resultado), expected_output)
+
+    def test_8(self):
+        """
+         Verifica que se retorne los votantes cuando se manejan pequeños datos. (Retorna generador no vacío)
+        """
+        carpeta = "s"
+        generador_voto = cargar_datos("votos", carpeta)
+        resultado = animales_que_votaron_por(generador_voto, 5183)
+        expected_output = ANIMALES_QUE_VOTARON_POR_S_2
+        
+        self.assertIsInstance(resultado, (list, tuple, set, filter, map, Generator))
+        self.assertCountEqual(list(resultado), expected_output)
+
 
 
 if __name__ == "__main__":
