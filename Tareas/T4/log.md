@@ -1,5 +1,5 @@
 # Actualizaciones Tarea
 
-> Fecha
+> Martes 04 de Junio
 
-1. Suceso
+1. Actualización de los tableros de nivel experto para consistencia con el enunciado (dimensiones nxn).
