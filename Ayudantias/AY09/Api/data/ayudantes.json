@@ -1,0 +1,58 @@
+[
+    {
+        "id": 1,
+        "nombre": "Julio",
+        "apellido": "Huerta",
+        "n_alumno": "20544407",
+        "estado": "rechazado",
+        "motivacion": "ser admin"
+    },
+    {
+        "id": 2,
+        "nombre": "Julian",
+        "apellido": "Garc\u00eda",
+        "n_alumno": "20643309",
+        "estado": "aceptado",
+        "motivacion": "ser master"
+    },
+    {
+        "nombre": "Clemente",
+        "apellido": "Campos",
+        "n_alumno": "1111",
+        "id": 3,
+        "estado": "pendiente",
+        "motivacion": "ffdfdfdfdfdfdfdf"
+    },
+    {
+        "nombre": "Diego",
+        "apellido": "Toledo",
+        "n_alumno": "111221",
+        "id": 4,
+        "estado": "aceptado",
+        "motivacion": ""
+    },
+    {
+        "nombre": "Carlos",
+        "apellido": "Olgu\u00edn",
+        "n_alumno": "gggg",
+        "id": 5,
+        "estado": "aceptado",
+        "motivacion": ""
+    },
+    {
+        "nombre": "Catalina",
+        "apellido": "Miranda",
+        "n_alumno": "2",
+        "id": 6,
+        "estado": "aceptado",
+        "motivacion": ""
+    },
+    {
+        "nombre": "Cristobal",
+        "apellido": "Perez-Cotapos",
+        "n_alumno": "18638279",
+        "id": 7,
+        "estado": "pendiente",
+        "motivacion": ""
+    }
+]
