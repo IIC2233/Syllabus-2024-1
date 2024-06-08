@@ -15,3 +15,9 @@
    En las versiones anteriores del enunciado este parámetro aparecía con dos nombres distintos: `TIEMPO_ADICIONAL` y `TIEMPO_SANDIA`. De momento se cambiaron toda las referencias por `TIEMPO_ADICIONAL`, pero pueden utilizar el nombre de parámetros que consideres adecuado.  
    
    Esto fue informado a través de la [issue #512](https://github.com/IIC2233/Syllabus/issues/512).
+
+> Sábado 08 de Junio
+
+3. Actualización de la base y la solución del archivo `experto3.txt`, arreglando las dimensiones y un typo. 
+
+   Esto fue informado a través de la [issue #520](https://github.com/IIC2233/Syllabus/issues/520).
