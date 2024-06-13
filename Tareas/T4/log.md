@@ -21,3 +21,9 @@
 3. Actualización de la base y la solución del archivo `experto3.txt`, arreglando las dimensiones y un typo. 
 
    Esto fue informado a través de la [issue #520](https://github.com/IIC2233/Syllabus/issues/520).
+
+> Jueves 13 de Junio
+
+4. Actualización de la base del archivo `experto4.txt`, arreglando un typo. 
+
+   Esto fue informado a través de la [issue #540](https://github.com/IIC2233/Syllabus/issues/540).
